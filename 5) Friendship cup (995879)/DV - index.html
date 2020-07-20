@@ -1,0 +1,1754 @@
+<link rel="stylesheet" href="/sportmaster.ru/css/proximanova.css">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, minimal-ui">
+<script src="https://cdn.sptmr.ru/sportmaster.ru/js/lib/jquery-1.10.2.min.js?sv=62470eda1b5dba92"></script>
+
+
+<style>
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.ttf?v=1.0') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.eot?v=1.0#iefix') format('embedded-opentype'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.woff?v=1.0') format('woff'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.ttf?v=1.0') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.ttf?v=1.0') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.eot?v=1.0#iefix') format('embedded-opentype'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.woff?v=1.0') format('woff'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.ttf?v=1.0') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.ttf?v=1.0') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+</style>
+
+
+
+<style>
+
+.sm-news__date {
+  display: none;
+}
+
+.fc-new-ul-none {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.fc-new-li-none {
+  list-style-type: none;
+}
+
+.fc-new-uppercase {
+  text-transform: uppercase;
+}
+
+.fc-new-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fc-new-title {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.fc-new-paragraph {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 500;
+}
+
+   
+.fc-new_container {
+  width: 100%;
+  max-width: 990px;
+  font-family: 'Proxima Nova';
+  color: #212441;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.fc-new_container-block {
+  padding: 0 40px;
+}
+
+.fc-new_mb60 {
+  margin-bottom: 60px;
+}
+
+
+
+@media (max-width: 480px){
+
+  .fc-new_container-block {
+    padding: 0 18px;
+  }
+
+
+  .fc-new-title {
+    font-size: 30px;
+  }
+
+  .fc-new_mb60 {
+    margin-bottom: 20px;
+  }
+
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+<section class="fc-new_container">
+
+
+
+
+<style>
+  .fc-new_header_dac {
+    display: flex;
+    flex-wrap: wrap;
+    color: #000000;
+    font-size: 14px;
+    align-items: center;
+    margin-top: 22px;
+    margin-bottom: 20px;
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  .fc-new_header_date {
+    font-weight: 600;
+    position: relative;
+    margin-left: 30px;
+  }
+
+  .fc-new_header_date::before {
+    content: '';
+    background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png);
+    position: absolute;
+    left: -30px;
+    top: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+  }
+
+
+
+  .fc-new_header_date::after {
+    content: '';
+    height: 20px;
+    width: 1px;
+    position: absolute;
+    right: -8px;
+    top: -3px;
+    background: #000000;
+  }
+
+
+  @media (max-width: 1000px){ 
+
+    .fc-new_header_dac {
+      flex-direction: column;
+      align-items: inherit;
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    .fc-new_header_date {
+      margin-bottom: 7px;
+    }
+
+
+    .fc-new_header_date::after {
+      content: none;
+    }
+
+
+  }
+
+
+  @media (max-width: 500px){ 
+    .fc-new_header_dac {
+      font-size: 10px;
+   }
+
+   .fc-new_header_date {
+      margin-left: 24px;
+   }
+
+   .fc-new_header_date::before {
+      left: -24px;
+      width: 12px;
+      height: 12px;
+   }
+
+
+
+  }
+
+
+  
+</style>
+
+<!-- <div class="fc-new_header_dac">
+  <div class="fc-new_header_date">22 - 27 сентября 2020</div>
+  <div class="fc-new_header_city">г. Новосибирск,  СК «СЕВЕР» ул. Учительская 61</div>
+</div> -->
+
+
+
+
+
+                              <!-- ПРИГЛАШАЕМ ИГРОКОВ БВЛ -->
+
+                              <!-- ПРИГЛАШАЕМ ИГРОКОВ БВЛ -->
+
+                              <!-- ПРИГЛАШАЕМ ИГРОКОВ БВЛ -->
+
+
+<style>
+  .fc-new_header_content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fc-new_header_content::before {
+    content: '';
+
+    width: 100%;
+    height: 430px;
+    border-radius: 20px;
+    position: absolute;
+
+    background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/fc_players_full.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .fc-new_header_text {
+    padding-top: 455px;
+  }
+
+  .fc-new_header_link {
+    background: #0159ac;
+    padding: 12px 20px;
+    margin: 25px 0;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .fc-new_header_link:hover {
+    background: rgba(1, 89, 172, 0.75);
+    color: #ffffff;
+  }
+
+  @media (max-width: 768px){ 
+
+    .fc-new_header_content::before {
+      background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/fc_players_m_full.jpg);
+      background-size: contain;
+    }
+
+    .fc-new_header_text {
+     padding-top: 60%;
+    }
+
+    .fc-new_header_link {
+      font-size: 16px;
+    }
+  }
+
+
+  @media (max-width: 480px){
+    .fc-new_header_text {
+      font-size: 13px;
+      line-height: 15px;
+      margin-top: 5px;
+    }
+
+    .fc-new_header_link {
+      font-size: 12px;
+      width: 49.4%;
+      text-align: center;
+    }
+  }
+
+
+
+
+</style>
+
+
+<div class="fc-new_header">
+  <div class="fc-new_header_content">
+    <div class="fc-new_header_text fc-new-paragraph">
+      С 22 по 27 сентября Береговая Волейбольная Лига проводит юношеский турнир Кубок Дружбы 2020. Соревнования пройдут в Новосибирске среди мальчиков и девочек 2008– 2009 г.р. Участвуют 32 команды со всей России. Приглашаем вас поддержать юных спортсменов и поболеть за любимую команду.
+    </div>
+    <a href="https://myvolley.ru/tournament/?id=448#/" target="_blank" class="fc-new_header_link fc-new-uppercase">Подробнее</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                              <!-- БОНУСНАЯ ПРОГРАММА -->
+
+                              <!-- БОНУСНАЯ ПРОГРАММА -->
+
+                              <!-- БОНУСНАЯ ПРОГРАММА -->
+
+
+
+
+<style>
+.fc-new_bonus {
+  background: #f5f5f7;
+  border-radius: 10px;
+  padding-top: 40px;
+}
+
+.fc-new_bonus-background {
+  background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/9953614_09_06_2020/roh-new_bonus.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0 0 10px 10px;
+}
+
+.fc-new_bonus_title {
+    width: 413px;
+}
+
+.fc-new_bonus_steps {
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.fc-new_bonus_step {
+  display: flex;
+  width: 30%;
+  min-width: 260px;
+  margin: 12px 0;
+}
+
+.fc-new_bonus_step-number {
+  font-size: 40px;
+  font-weight: 900;
+  margin-right: 20px;
+}
+
+.fc-new_bonus_step-text {
+  line-height: 1.63;
+  font-weight: 600;
+}
+
+.fc-new_bonus_step-text a {
+  text-decoration: none;
+  color: #005ab1;
+}
+
+.fc-new_bonus_step-text a:hover {
+  color: #044481;
+  font-weight: bold;
+}
+
+.fc-new_bonus_step-text-three span {
+  font-size: 12px;
+}
+
+.fc-new_bonus_card {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.fc-new_bonus_card::before {
+  content: '';
+  background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/9953614_09_06_2020/roh_new_cards.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 42%;
+  height: 340px;
+  min-width: 337px;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+
+.fc-new_bonus_card_content {
+  min-width: 341px;
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 55px;
+  padding-bottom: 15px;
+}
+
+.fc-new_bonus_card_title {
+  font-size: 35px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.fc-new_bonus_card_title span {
+  color: #e02020;
+}
+
+.fc-new_bonus_card_suptitle {
+  font-size: 21px;
+}
+
+.fc-new_bonus_card_register {
+  margin-top: 30px;
+}
+
+.fc-new_bonus_card_register-btn {
+  color: #ffffff;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 3px;
+  background-color: #ed1c24;
+  border: 2px solid #ed1c24;
+  padding: 10px 18px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.fc-new_bonus_card_register-btn:hover {
+  background: #fd4b51;
+  border: 2px solid #fd4b51;
+  color: #ffffff;
+  box-shadow: 0px 0px 10px 3px #fd4b51;
+}
+
+.fc-new_bonus_card_detailed-btn {
+  color: #212441;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 3px;
+  border: solid 2px #ffffff;
+  padding: 10px 18px;
+  background: #ffffff;
+  font-weight: bold;
+  margin-left: 13px;
+  transition: 0.2s;
+}
+
+.fc-new_bonus_card_detailed-btn:hover {
+  background: rgb(251, 223, 223);
+  color: #212441;
+  box-shadow: 0px 0px 10px 3px #ffffff;
+  border: solid 2px rgb(251, 223, 223);
+}
+
+.fc-new_bonus_card_login {
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.fc-new_bonus_card_login-btn {
+  font-weight: 600;
+  color: #00aeef;
+  text-decoration: none;
+}
+
+.fc-new_bonus_card_login-btn:hover {
+  color: #2000c4;
+}
+
+.fc-new_bonus_card_conditions {
+  font-size: 10px;
+  font-weight: 500;
+  margin-top: 37px;
+  color: #ffffff;
+}
+
+
+
+@media (max-width: 992px){
+  .fc-new_bonus-background {
+    background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/9953614_09_06_2020/roh-new_m_bonus.jpg);
+  }
+
+  .fc-new_bonus {
+  }
+
+  .fc-new_bonus_steps {
+    padding-bottom: 64px;
+  }
+
+  .fc-new_bonus_step {
+      width: 100%;
+      align-items: center;
+  }
+  
+  .fc-new_bonus_card {
+    justify-content: center;
+  }
+
+  .fc-new_bonus_card::before {
+    left: auto;
+    top: -131px;
+  }
+
+  .fc-new_bonus_card_content {
+    width: 100%;
+    padding-top: 225px;
+    align-items: center;
+  }
+
+  .fc-new_bonus_card_title {
+    text-align: center;
+    width: 344px;
+  }
+
+  .fc-new_bonus_card_content-text {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fc-new_bonus_card_register {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .fc-new_bonus_card_register a {
+    width: 100%;
+    text-decoration: none;
+  }
+
+  .fc-new_bonus_card_detailed-btn {
+    margin-top: 15px;
+    margin-left: inherit;
+  }
+
+  .fc-new_bonus_card_conditions {
+    text-align: center;
+  }
+
+
+@media (max-width: 768px){ 
+  .fc-new_bonus_card_register-btn,
+  .fc-new_bonus_card_detailed-btn {
+    font-size: 16px;
+  }
+
+}
+
+
+@media (max-width: 480px){
+
+  .fc-new_bonus-background {
+    width: 100%;
+  }
+
+  .fc-new_bonus {
+    padding-top: 35px;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .fc-new-title {
+    font-size: 33px;
+  }
+
+  .fc-new_container-block {
+    
+  }
+
+  .fc-new_bonus_card::before {
+    top: -207px;
+    min-width: 270px;
+  }
+
+  .fc-new_bonus_card_title {
+    font-size: 22px;
+    min-width: auto;
+    width: inherit;
+    line-height: 28px;
+  }
+
+  .fc-new_bonus_title,
+  .fc-new_bonus_steps,
+  .fc-new_bonus_step {
+    width: 100%;
+    min-width: 220px;
+    margin-top: 12px;
+  }
+
+  .fc-new_bonus_steps {
+    margin-bottom: 48px;
+
+  }
+
+  .fc-new_bonus_step {
+    align-items: initial;
+  }
+
+  .fc-new_bonus_step-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .fc-new_bonus_step-number {
+    line-height: 42px;
+  }
+
+  .fc-new_bonus_card_content {
+    padding-top: 79px;
+    min-width: 287px;
+    padding-bottom: 20px;
+  }
+
+  .fc-new_bonus_card_conditions {
+    width: 87%;
+    margin-top: 20px;
+  }
+
+  .fc-new_bonus_card_register-btn,
+  .fc-new_bonus_card_detailed-btn {
+    font-size: 12px;
+  }
+
+  .fc-new_bonus_card_login {
+    margin-top: 20px;
+  }
+
+}
+
+
+
+</style>
+
+
+
+    <div class="fc-new_bonus fc-new_mb60">
+      <div class="fc-new_container-block">
+        <div class="fc-new_bonus_title fc-new-title fc-new-uppercase">
+          Как получить бонусы?
+        </div>
+        <ul class="fc-new_bonus_steps fc-new-space-between fc-new-ul-none">
+          <li class="fc-new_bonus_step fc-new-li-none">
+            <div class="fc-new_bonus_step-number">
+              1
+            </div>
+            <div class="fc-new_bonus_step-text fc-new-paragraph">Зарегистрируйся на
+             рейтинговый сезон БВЛ
+             на сайте <a href="https://myvolley.ru/" target="_blank"> myvolley.ru</a>
+            </div>
+          </li>
+          <li class="fc-new_bonus_step fc-new-li-none">
+            <div class="fc-new_bonus_step-number">
+              2
+            </div>
+            <div class="fc-new_bonus_step-text fc-new-paragraph">
+              В личном кабинете укажи телефон, 
+              привязанный к Клубной карте Спортмастер
+            </div>
+          </li>
+          <li class="fc-new_bonus_step fc-new-li-none">
+            <div class="fc-new_bonus_step-number">
+              3
+            </div>
+            <div class="fc-new_bonus_step-text fc-new_bonus_step-text-three fc-new-paragraph">
+              Получи полную стоимость целевого взноса в виде бонусов Спортмастер <br>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="fc-new_bonus-background">
+        <div class="fc-new_container-block">
+          <div class="fc-new_bonus_card">
+            <div class="fc-new_bonus_card_content">
+              <div class="fc-new_bonus_card_content-text">
+                <div class="fc-new_bonus_card_title">
+                  Нет Клубной карты? <br>
+                  Вступайте в Клуб Спортмастер!
+                </div>
+                <!-- <div class="roh-new_bonus_card_suptitle">
+                  Оформите ее онлайн!
+                </div> -->
+                <div class="fc-new_bonus_card_register">         
+                  <a href="/user/session/register.do" class="fc-new_bonus_card_register-btn fc-new-uppercase">Зарегистрироваться</a>
+                  <a href="/clubpro/" class="fc-new_bonus_card_detailed-btn fc-new-uppercase">Подробнее</a>
+                  <div class="fc-new_bonus_card_login">Уже есть карта?
+                    <a href="/user/session/login.do" class="fc-new_bonus_card_login-btn">Войти</a>
+                  </div>
+                </div>
+                <div class="fc-new_bonus_card_conditions">
+                  Бонусами можно оплатить до 30% стоимости любых товаров, кроме подарочных карт,
+                  товаров «Лучшая цена» и товаров с отметкой «Не применяются бонусы и скидки».
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+                    <!-- МЯЧ ТУРНИРА -->
+
+                    <!-- МЯЧ ТУРНИРА -->
+
+                    <!-- МЯЧ ТУРНИРА -->
+<style>
+.roh-new_emotion {
+  /*background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/fc_new_tur_ball.jpg);*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.fc-new_emotion-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.roh-new_emotion_content {
+  width: 54%;
+  /*max-width: 441px;*/
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 40px;
+  padding-right: 84px;
+  background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/fc_new_tur_balll.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 379px;
+}
+
+.roh-new_emotion_title {
+    width: 94%;
+}
+
+.roh-new_emotion_title span {
+  color: rgba(237, 28, 36, 1);
+}
+
+.roh-new_emotion_description {
+    width: 100%;
+    margin: 24px 0 20px 0;
+}
+
+.roh-new_emotion_links {
+  display: flex;
+  width: 61%;
+  justify-content: space-between;
+}
+
+.roh-new_emotion_link {
+  font-size: 12px;
+  text-decoration: none;
+  transition: 0.2s;
+  font-weight: 700;
+  padding: 12px 33px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.roh-new_emotion_link:first-child {
+  color: #ffffff;
+  background: rgba(1, 89, 172, 1);
+  border: 1px solid rgba(1, 89, 172, 1) ;
+}
+
+.roh-new_emotion_link:last-child {
+  color: #000000;
+  background: rgba(1, 89, 172, 0);
+  border: 1px solid #33333345 ;
+  cursor: pointer;
+}
+
+.roh-new_emotion_link:hover:last-child,
+.roh-new_emotion_link:hover:first-child {
+  opacity: 0.6;
+}
+
+/*.roh-new_emotion_link:hover {
+  color: #212441;
+  font-weight: 900;
+}*/
+
+.roh-new_emotion_ball-link {
+  width: 410px; 
+  height: 459px;
+  position: absolute;
+  right: 0;
+  transition: 0.3s;
+  border-radius: 0px 12px 12px 0px;
+}
+
+.roh-new_emotion_ball-link img:last-child {
+  display: none;
+}
+
+.roh-new_emotion_ball-link:hover {
+  filter: contrast(1.4);
+  box-shadow: 0px 0px 10px -4px black;
+  /*-webkit-filter: grayscale(100%);*/
+}
+
+.roh-new_emotion_ball-link img {
+  width: 100%;
+  border-radius: 0px 12px 12px 0px;
+  height: 100%;
+}
+
+
+
+
+@media (max-width: 920px){
+  .fc-new_emotion-block {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .roh-new_emotion_ball-link {
+    position: inherit;
+    width: 100%;
+    height: auto;
+    border-radius: 44px 44px 0px 0px;
+  }
+
+  .roh-new_emotion_content {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: initial;
+    height: initial;
+    background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/fc_m_ballll.png);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .roh-new_emotion_ball-link img:first-child {
+    display: none;
+  }
+
+  .roh-new_emotion_ball-link img:last-child {
+    display: block;
+    border-radius: 12px 12px 0px 0px;
+  }
+
+  .roh-new_emotion_title,
+  .roh-new_emotion_description,
+  .roh-new_emotion_description {
+    color: #ffffff;
+  }
+
+  .roh-new_emotion_title span {
+    color: #ffffff;
+  }
+
+  .roh-new_emotion_links {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .roh-new_emotion_link:first-child {
+    color: #ffffff;
+    background: rgba(1, 89, 172, 1);
+    border: 1px solid rgba(1, 89, 172, 1) ;
+  }
+
+  .roh-new_emotion_link:last-child {
+    color: #ffffff;
+    background: rgba(1, 89, 172, 0);
+    border: 1px solid #ffffff ;
+  }
+
+
+}
+
+
+
+
+@media (max-width: 768px){
+
+  .roh-new_emotion {
+    color: #ffffff;
+    /*background-image: url(http://prod.bitrix.web.local/upload/dip_content/2020/news/995879_2020-06-16/fc_new_m_tur_m_balll.png);*/
+  }
+
+  .roh-new_emotion_title,
+  .roh-new_emotion_description {
+    width: 100%;
+    color: #ffffff;
+  }
+
+  .roh-new_emotion_title br {
+    display: none;
+  }
+
+
+  .roh-new_emotion_content {
+    max-width: initial;
+  }
+
+  .roh-new_emotion a {
+    color: #ffffff;
+  }
+
+  .roh-new_emotion a span,
+  .roh-new_emotion a span::before,
+  .roh-new_emotion a span::after {
+    background: #ffffff;
+  }
+
+}
+
+
+@media (max-width: 480px){
+  .roh-new_emotion {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0px;
+  }
+
+  .roh-new_emotion_title {
+    letter-spacing: -0.66px;
+  }
+
+  .roh-new_emotion_description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .roh-new_emotion_description:last-child {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .roh-new_emotion_content {
+    padding: 34px 18px;
+  }
+
+  .roh-new_emotion_links {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .roh-new_emotion_link:first-child {
+    margin: 0 30.25px 15px 30.25px;
+  }
+
+  .roh-new_emotion_link:last-child {
+    margin: 0 30.25px;
+  }
+}
+
+
+
+/*992px
+768px
+480px
+320px */
+
+
+</style>
+
+    <div class="roh-new_emotion fc-new_mb60">
+      <div class="fc-new_emotion-block">
+        <div class="roh-new_emotion_content">
+          <div class="roh-new_emotion_title fc-new-title fc-new-uppercase">
+            <span>Скидка 15%</span>
+            <br>
+            на официальный
+            мяч турнира Molten
+          </div>
+          <div class="roh-new_emotion_description fc-new-paragraph">
+            Для всех участников БВЛ действует скидка 15%
+            по промокоду на мячи Molten.
+            Для получения скидки, необходимо зарегистрироваться
+            в Клубной программе Спортмастер и указать адрес электронной почты.<br>
+            <br>
+            31 июля вы получите промокод, на указанный ранее e-mail.
+          </div>
+          <div class="roh-new_emotion_links">
+            <a href="https://www.sportmaster.ru/catalog/product/search.do?f-clr=color_belyi&f-tippove=tip_poverhnosti_dlya_zala&text=molten&icid=activity!kubok_druzhb!buy_molten" class="roh-new_emotion_link fc-new_uppercase">
+              купить
+            </a>
+            <button class="roh-new_emotion_link roh-new_emotion_link-l fc-new_uppercase">
+              условия акции
+            </button>
+          </div>
+          <div class="roh-new_emotion_description">* В акции участвуют только мячи Molten V5M5000 и V5M4000</div>
+        </div>
+        <a href="/catalog/product/search.do?f-clr=color_belyi&f-tippove=tip_poverhnosti_dlya_zala&text=molten" class="roh-new_emotion_ball-link">
+          <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/fc_new_tur_ball_linkk.jpg">
+          <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/fc_new_tur_m_ball_linkk.png">
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      <!-- ЭКИПИРОВАКА ДЛЯ ВОЛЕЙБОЛА -->
+
+                      <!-- ЭКИПИРОВАКА ДЛЯ ВОЛЕЙБОЛА -->
+
+                      <!-- ЭКИПИРОВАКА ДЛЯ ВОЛЕЙБОЛА -->
+
+<style>
+
+.roh-new_man-set_container {
+  flex-direction: column;
+}
+
+.roh-new_man-set {
+  padding: 25px 15px 28px 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/fc_new_buy.jpg);
+}
+
+.roh-new_man-set_title {
+  font-size: 40px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  width: 375px;
+  min-width: 219px;
+  text-align: start;
+
+  justify-content: flex-end;
+  margin-bottom: 25px;
+  margin-left: 13px;
+  line-height: 42px;
+}
+
+.roh-new_man-set_product {
+  width: 75.6%;
+}
+
+.roh-new_man-set_product_content {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.roh-new_man-set_product_links {
+  margin-left: 20px;
+}
+
+.roh-new_man-set_product_item {
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 55px 25px 55px 22px;
+  width: 24.7%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 181px;
+  margin: 0 9px;
+  color: #212441;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.roh-new_man-set_product_item:hover {
+    -webkit-transform: scale(1.03);
+    -moz-transform: scale(1.03);
+    -o-transform: scale(1.03);
+  color: #212441;
+  box-shadow: 0px 0px 10px 0px #ffffff;
+}
+
+.roh-new_man-set_product_item_container-img {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  align-items: center;
+}
+
+.roh-new_man-set_product_item_img {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13px;
+  align-items: center;
+  text-align: center;
+}
+
+.roh-new_man-set_product_item_text {
+  width: 100%;
+}
+
+
+.roh-new_man-set_product_item_title,
+.roh-new_man-set_product_item_brand {
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.roh-new_man-set_product_item_not-price {
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  margin: 5px 0;
+}
+
+.roh-new_man-set_product_item_discount {
+    width: 67%;
+    margin-top: 2px;
+}
+
+.roh-new_man-set_product_link-buy {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 3px;
+  background-color: #ed1c24;
+  padding: 10px 31px;
+  border: 2px #ed1c24 solid;
+  margin-right: 15px;
+}
+
+.roh-new_man-set_product_link-buy:hover {
+  background-color: #fd4b51;
+  border: 2px #fd4b51 solid;
+  color: #ffffff;
+}
+
+.roh-new_man-set_product_link-show {
+  color: #212441;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 8px 31px;
+  border: 2px #ffffff solid;
+  background: #ffffff;
+}
+
+.roh-new_man-set_product_link-show:hover {
+  color: #212441;
+  background: #fbdfdf6b;
+}
+
+
+
+
+@media (max-width: 992px){
+  .roh-new_man-set {
+    /*background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/fc_new_m_buy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;*/
+  }
+
+  .roh-new_man-set_product {
+    width: 100%;
+    text-align: center;
+  }
+
+  .roh-new_man-set_product_item {
+    min-width: inherit;
+  }
+
+  .roh-new_man-set_product_link-buy {
+    font-size: 16px;
+  }
+
+}
+
+
+@media (max-width: 768px){
+  .roh-new_man-set_container {
+    position: relative;
+  }
+
+  .roh-new_man-set_title {
+    position: absolute;
+    top: 138px;
+    color: #ffffff;
+  }
+
+  .roh-new_man-set {
+    background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/fc_new_m_buy.jpg);
+    padding-top: 294px;
+    padding-right: 0;
+    padding-bottom: 30px;
+  }
+
+  .roh-new_man-set_product_content {
+    overflow-x: scroll;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 0;
+  }
+
+  .roh-new_man-set_product_item {
+    min-width: 181px;
+    padding: 37px 25px 37px 22px;
+  }
+
+  .roh-new_man-set_product_item_img {
+    width: 187px;
+  }
+}
+
+@media (max-width: 480px){
+
+  .roh-new_man-set {
+    padding-top: 249px;
+  }
+
+  .roh-new_man-set_title {
+    font-size: 33px;
+    margin-left: 18px;
+    width: 78%;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .roh-new_man-set_title br {
+    display: none;
+  }
+
+  .roh-new_man-set_product_link-buy {
+    font-size: 12px;
+  }
+
+
+/*992px
+768px
+480px
+320px */
+
+</style>
+
+
+
+
+
+
+
+
+<div class="roh-new_man-set_container fc-new-space-between fc-new_mb60">
+  <div class="roh-new_man-set_title fc-new-title fc-new-uppercase">Экипировка <br> для волейбола</div>
+  <div class="roh-new_man-set fc-new-space-between">
+    <div class="roh-new_man-set_product">
+      <div class="roh-new_man-set_product_content fc-new-space-between">
+
+        <!-- first item -->
+        <a href="https://www.sportmaster.ru/catalog/vidy_sporta_/voleybol/myachi/?icid=activity!kubok_druzhbi!boll" class="roh-new_man-set_product_item roh-new_man-set_product_item_long">
+          <div class="roh-new_man-set_product_item_container-img">
+            <div class="roh-new_man-set_product_item_img">
+              <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/fc_new_ball.png" alt="фото лонгслива">
+            </div>
+          </div>
+          <div class="roh-new_man-set_product_item_text">
+            <div class="roh-new_man-set_product_item_title">
+              Мячи
+            </div>
+          </div>
+        </a>
+
+        <!-- second item -->
+        <a href="https://www.sportmaster.ru/catalog/vidy_sporta_/voleybol/obuv_/?icid=activity!kubok_druzhbi!footwear" class="roh-new_man-set_product_item roh-new_man-set_product_item_leg">
+          <div class="roh-new_man-set_product_item_container-img">
+            <div class="roh-new_man-set_product_item_img">
+              <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/dc_new_sneakers.png" alt="фото тайтсов мужских">
+            </div>
+          </div>
+          <div class="roh-new_man-set_product_item_text">
+            <div class="roh-new_man-set_product_item_title">
+              Обувь
+            </div>
+          </div>
+        </a>
+
+        <!-- third item -->
+        <a href="https://www.sportmaster.ru/catalog/vidy_sporta_/voleybol/zashchita/?icid=activity!kubok_druzhbi!zaschita" class="roh-new_man-set_product_item roh-new_man-set_product_item_shoes">
+          <div class="roh-new_man-set_product_item_container-img">
+            <div class="roh-new_man-set_product_item_img">
+              <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/995879_2020-06-16/fc_new_protection.png" alt="фото мужских кроссовок">
+            </div>
+          </div>
+          <div class="roh-new_man-set_product_item_text">
+            <div class="roh-new_man-set_product_item_title">
+              Защита
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="roh-new_man-set_product_links">
+        <a href="https://www.sportmaster.ru/catalog/vidy_sporta_/voleybol/?icid=activity!kubok_druzhbi!vse" class="roh-new_man-set_product_link-buy fc-new-uppercase">Смотреть все товары</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+              <!-- ВИДЕО -->
+
+              <!-- ВИДЕО -->
+
+              <!-- ВИДЕО -->
+
+
+
+
+<style>
+
+  .fc-new_video_title {
+    margin-bottom: 25px;
+  }
+
+  .fc-new_video {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .fc-new_video_title {
+    width: 92%;
+  }
+
+  .fc-new_video iframe {
+    border-radius: 10px;
+  }
+
+
+  @media (max-width: 768px){
+
+    .fc-new_video {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .fc-new_video_title {
+      width: 90%;
+    }
+
+
+  @media (max-width: 480px){
+
+    .fc-new_video {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .fc-new_video_title {
+      width: 89%;
+    }
+
+    .fc-new_video iframe {
+      height: 175px;
+
+    }
+
+
+
+  }
+
+</style>
+
+
+
+
+
+<div class="fc-new_video">
+  <div class="fc-new_video_title fc-new-title fc-new-uppercase">Кубок дружбы 2019</div>
+  <iframe width="100%" height="556px" src="https://www.youtube.com/embed/sU7ijYbTdKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" rel='0' allowfullscreen></iframe>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+  .fc-new_popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: 0.2s;
+  }
+
+  .fc-new_popup ul {
+    list-style-type: none; /* Убираем исходные маркеры */
+    counter-reset: num; /* Задаём имя счетчика */
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+   .fc-new_popup li {
+    display: flex;
+    width: 90%;
+   }
+
+   .fc-new_popup li:nth-child(2) {
+    margin-top: 5px;
+   }
+
+   .fc-new_popup li::before {
+    content: counter(num) '. '; /* Выводим число */
+    counter-increment: num; /* Увеличиваем значение счётчика */
+    color: black;
+    font-weight: 600;
+    margin-right: 10px;
+   }
+
+  .fc-new_popup-none {
+    transform: translateX(-225%);
+  }
+
+  .fc-new_popup-acive {
+    transform: translateX(0%);
+  }
+
+  .fc-new_popup_content {
+    padding: 40px;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: relative;
+    transition: 3.3s;
+    transform: translateY(-0%);
+    width: 80%;
+    flex-direction: column;
+    height: 300px;
+    top: 10%;
+    box-shadow: 0px 0px 1000px 1000px rgba(0,0,0,0.5);
+  }
+
+  .fc-new_popup_content-none {
+    opacity: 0;
+
+  }
+
+  .fc-new_popup_content-active {
+    opacity: 1;
+    font-size: 16px;
+  }
+
+  .fc-new_popup_clouse {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 6px;
+    right: 6px;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .fc-new_popup_clouse::before {
+    content: '';
+    width: 21px;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    transform: rotate(43deg);
+    cursor: pointer;
+  }
+
+  .fc-new_popup_clouse::after {
+    content: '';
+    width: 21px;
+    height: 3px;
+    background: #000000;
+    position: absolute;
+    transform: rotate(-43deg);
+    cursor: pointer;
+  }
+
+  .fc-new_popup_clouse:hover::after,
+  .fc-new_popup_clouse:hover::before {
+    background: rgba(0, 0, 0, 0.58);
+  }
+
+  .fc-new_popap_content_text {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+
+  .fc-new_popap_content_text br {
+    margin-bottom: 8px;
+  }
+
+  .fc-new_popap_content_text-b {
+    margin: 3px 0;
+  }
+
+  .fc-new_popap_content_text-p {
+    margin-top: 7px;
+  }
+
+  .fc-new_popap_content_text-p_title {
+    font-weight: 700;
+  }
+
+  @media (max-width: 768px){ 
+
+    .fc-new_popap_content {
+      height: 70%;
+      transform: initial;
+      /*top: 50px;*/
+    }
+
+  }
+
+  @media (max-width: 480px){ 
+
+    .fc-new_popup_content {
+      width: 85%;
+      padding: 40px 15px;
+      font-size: 13px;
+    }
+
+  }
+
+
+</style>
+
+
+<div class="fc-new_popup fc-new_popup-none">
+  <div class="fc-new_popup_content fc-new_popup_content-active">
+    <button class="fc-new_popup_clouse"></button>
+    <div class="fc-new_popap_content_text">
+      <div class="fc-new_popap_content_text-b">
+
+        Предложение действительно с 31.07.2020 по 31.12.2020 на сайте 
+        sportmaster.ru, в мобильном приложении и розничных магазинах 
+        «Спортмастер» (магазины формата Дисконт не участвуют).
+      </div>
+      <div class="fc-new_popap_content_text-b">
+        В период действия акции выдается промокод со скидкой 15% на мячи 
+        Molten V5M5000 и V5M4000
+      </div>
+      <div class="fc-new_popap_content_text-b">
+        Промокод выдается только участникам соревнований Береговой 
+        Волейбольной Лиги, зарегистрированным в Клубной программе 
+        Спортмастер.
+      </div>
+      <div class="fc-new_popap_content_text-b">
+        После использования или окончания срока Акции промокод Акции 
+        недействителен.
+      </div>
+
+      <div class="fc-new_popap_content_text-p">
+        <div class="fc-new_popap_content_text-p_title">Для использования промокода нужно:</div>
+        <ul class="fc-new_popap_content_text-p">
+          <li>
+            <div> Оформить заказ на сайте sportmaster.ru, в Приложении «Спортмастер» или в розничном магазине «Спортмастер» (магазины формата Дисконт не участвуют).</div>
+          </li>  
+          <li>
+            <div>Ввести промокод в соответствующие поле на странице оформления заказа и нажать кнопку "Применить", в розничных магазинах "Спортмастер" необходимо предъявить промокод на кассе.</div>
+          </li>
+        </ul>
+      </div>
+
+
+        <div class="fc-new_popap_content_text-b">
+          Промокод действует только на мячи Molten V5M5000 и V5M4000
+        </div>
+        <div class="fc-new_popap_content_text-b">
+          Скидка по промокоду составляет 15% от стоимости товара. Недопустимо 
+          одновременное использование промокода со скидками для владельцев 
+          клубной карты или c промо-акциями. Бонусы с покупки начисляются 
+          согласно правилам Клубной программы.
+        </div>
+        <div class="fc-new_popap_content_text-b">
+          Одновременное использование нескольких промокодов не 
+          предусмотрено. Скидка по промокоду не суммируется с бонусами.
+        </div>
+        <div class="fc-new_popap_content_text-b">
+          Подробности акции, информацию о клубной программе «Спортмастер», 
+          перечне товаров, механике начисления бонусов и взаимодействии с 
+          другими акциями уточняйте по тел. 8 (800) 777-777-1.
+        </div>
+        <div class="fc-new_popap_content_text-b">
+          Количество товаров ограниченно. Денежный эквивалент скидки не 
+          предоставляется. Организатор оставляет за собой право изменять сроки и 
+          условия акции. Организатор ООО «Спортмастер». Юр. адрес: 117437, г. 
+          Москва, ул. Миклухо-Маклая, д. 18, корп. 2, комн. 102. ОГРН 
+          1057747320278.
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script language="JavaScript">
+
+      console.log('нажать на кнопку получилось 1')
+    // для мобильной версии перевести hover, на click
+    $(".roh-new_emotion_link-l").click(function(){
+      $(".fc-new_popup").removeClass("fc-new_popup-none");
+      $(".fc-new_popup").addClass("fc-new_popup-active");
+      $(".fc-new_popup_content").removeClass("fc-new_popup_content-none");
+      $(".fc-new_popup_content").addClass("fc-new_popup_content-active");
+      // $(".nav").toggleClass("nav-column"); 
+      console.log('нажать на кнопку получилось 3')
+    });
+      console.log('нажать на кнопку получилось 2')
+
+
+    $(".fc-new_popup_clouse").click(function(){
+      $(".fc-new_popup").addClass("fc-new_popup-none");
+      $(".fc-new_popup").removeClass("fc-new_popup-active");
+      // $(".nav").toggleClass("nav-column"); 
+      console.log('нажать на кнопку получилось 3')
+    });
+</script>
+
+
+
+
+
+</section>
