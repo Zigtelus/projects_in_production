@@ -1,0 +1,910 @@
+<link rel="stylesheet" href="/sportmaster.ru/css/proximanova.css">
+<script src="https://code.jquery.com/jquery-1.10.2.min.js" integrity="sha256-C6CB9UYIS9UJeqinPHWTHVqh/E1uhG5Twh+Y5qFQmYg=" crossorigin="anonymous"></script>
+<style>
+
+.sm-news__common h1, .sm-news__date{display: none;}
+
+
+.ars_main_sport_b_wrap{
+	font-family: 'Proxima Nova';
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.ars_main_sport_b_wrap img{
+	vertical-align: middle;
+}
+.ars_sport_b_wrap{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 990px;
+	width: 100%;
+	align-content: center;
+	align-items: center;
+
+}
+
+.ars_main_sport_b_wrap_head {
+	display: flex;
+	justify-content: space-between;
+	max-width: 990px;
+	width: 100%;
+	height: 55px;
+	position: relative;
+    margin-top: 10px;
+}
+
+.ars_sport_h1_b{
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.ars_sport_b_wrap a:last-child{
+	text-decoration: none;
+}
+
+.ars_sport_b_wrap a{
+	text-decoration: none;
+}
+
+.ars_sport_b{
+	display: flex;
+	flex-direction: column;
+	width: 31%;
+	margin-top: 20px;
+	margin-left: 9px;
+	margin-right: 9px;
+	padding-bottom: 20px;
+	border-radius: 10px 10px 0 0;
+	transition: 0.3s;
+	border: solid 1px rgb(209, 209, 209);
+	color: #000000;
+}
+
+.ars_sport_b:hover {
+    box-shadow: 0px 0px 16px -4px;
+	color: #000000;
+}
+
+.ars_sport_b:hover .ars_sport_b_img img{
+	transform: scale(1.08);
+}
+
+.ars_sport_b_img{
+	overflow: hidden;
+	border-radius: 10px 10px 0 0;
+	height: 203px;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	display: flex;
+}
+
+.ars_sport_b_img img{
+	width: 100%;
+	transition: 0.2s;
+}
+
+
+.ars_sport_b_txt_wrap{
+	padding: 20px 0 0 0;
+/*	border-bottom: solid 1px rgb(209, 209, 209);
+	border-left: solid 1px rgb(209, 209, 209);
+	border-right: solid 1px rgb(209, 209, 209);*/
+	box-sizing: border-box;
+	height: 210px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ars_sport_b_txt_main_h1{
+font-size: 18px;
+font-weight: 700;
+height: 40px;
+}
+.ars_sport_b_txt_main{
+	width: 90%;
+}
+.ars_sport_b_txt_main_p{
+	font-size: 14px;
+	margin-top: 15px;
+}
+.ars_sport_b_txt_date{
+color: rgba(0, 0, 0, 0.5);
+font-size: 14px;
+display: flex;
+width: 90%;
+margin-top: 20px;
+}
+.ars_sport_b_txt_date span{
+	margin-left: 10px;
+}
+
+
+
+
+/*класс блокировки*/
+.ars_sport_b_img-block {
+	color: #a4a4a4;
+	background: #f5f5f5;
+	filter: none;
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+}
+
+.ars_sport_b_img-block:hover {
+	color: #a4a4a4;
+}
+
+
+
+
+@media (max-width: 900px){ 
+	.ars_sport_b {
+		width: 46%;
+	}
+
+	.ars_sport_b_wrap {
+		justify-content: space-between;
+	}
+
+
+}
+
+@media (max-width: 640px){ 
+	.ars_main_sport_b_wrap_head {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+
+	.ars_sport_b {
+		width: 100%;
+	}
+
+	.ars_sport_b_wrap {
+		justify-content: center;
+	}
+
+
+}
+
+
+
+
+</style>
+
+<div class="ars_main_sport_b_wrap">
+	<!-- <div class="ars_sport_h1_b">Спортивные мероприятия Спортмастер</div> -->
+
+
+
+	<div class="ars_main_sport_b_wrap_head">
+
+		<style>
+			.ars_main_sport_b_wrap_title {
+				font-size: 24px;
+				font-weight: 700;
+				font-family: 'corp',arial,helvetica,sans-serif;
+			}
+
+
+			@media (max-width: 640px) { 
+				.ars_main_sport_b_wrap_title {
+					width: 100%;
+				}
+			}
+
+
+		</style>
+
+
+		<div class="ars_main_sport_b_wrap_title">Спортивные мероприятия Спортмастер</div>
+
+
+
+
+		<style>
+			.ars_main_sport_b_wrap_form-to-block {
+
+			}
+
+			.ars_main_sport_sort {
+				width: 27%;
+				border: 2px solid #005aab;
+				height: 44px;
+				overflow: hidden;
+				transition: 0.3s;
+				position: absolute;
+				right: 0;
+				top: 0;
+				background: #ffffff;
+				border-radius: 6px;
+				/*box-shadow: 0px 0px 1px 0px;*/
+				z-index: 2;
+			}
+
+			.ars_main_sport_sort-active {
+				height: auto;
+				overflow: inherit;
+				transition: 0.3s;
+			}
+
+			.ars_main_sport_sort_item  {
+				border-bottom: 1px solid #f7dcdc;
+				padding: 13px 0;
+				cursor: pointer;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				font-size: 16px;
+			}
+
+			.ars_main_sport_sort_item-first {
+				border-top: 1px solid #f7dcdc;
+			}
+
+			.ars_main_sport_sort_item-last {
+				border-bottom: none;
+			}
+
+			.ars_main_sport_sort_item:hover {
+				background: #005aab;
+				color: #ffffff;
+			}
+
+			.ars_main_sport_sort_title {
+				color: #000000;
+				width: 100%;
+				background: none;
+				padding: 13px 0;
+				cursor: pointer;
+				font-size: 16px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			.ars_main_sport_sort_title-active {
+				color: #ffffff;
+				background: #005aab;
+			}
+
+			.ars_main_sport_sort_title-block {
+				width: 87%;
+			}
+
+			.ars_main_sport_sort_item-active {
+				background: #005aab;
+				color: #ffffff;
+			}
+
+			.ars_main_sport_sort_item-block {
+				width: 85%;
+			}
+
+			/*.ars_main_sport_sort:hover + .ars_main_sport_sort-arrow::before {
+				transform: rotate(-47deg);
+			}*/
+
+			/*.ars_main_sport_sort:hover + .ars_main_sport_sort-arrow::after {
+				transform: rotate(52deg);
+			}*/
+
+			.ars_main_sport_sort-arrow::before {
+				content: '';
+				background: #005aab;
+				width: 11px;
+				height: 2px;
+				top: 23px;
+				right: 17px;
+				position: absolute;
+				transform: rotate(47deg);
+				transition: 0.7s;
+				z-index: 3;
+			}
+
+			.ars_main_sport_sort-arrow-active::before {
+				transform: rotate(-47deg);
+			}
+
+			.ars_main_sport_sort-arrow::after {
+				content: '';
+				background: #005aab;
+				width: 11px;
+				height: 2px;
+				top: 23px;
+				right: 11px;
+				position: absolute;
+				transform: rotate(133deg);
+				transition: 0.7s;
+				z-index: 3;
+			}
+
+			.ars_main_sport_sort-arrow-active::after {
+				transform: rotate(52deg);
+			}
+
+			.ars_main_sport_sort-arrow-white::before,
+			.ars_main_sport_sort-arrow-white::after {
+				background: #ffffff;
+			}
+
+
+
+
+
+
+
+				@media (max-width: 900px) { 
+
+					.ars_main_sport_sort_title-block {
+						width: 94%;
+					}
+
+					.ars_main_sport_sort-arrow::before {
+						right: 33px;
+					}
+
+					.ars_main_sport_sort-arrow::after {
+						right: 26px;;
+					}
+
+					.ars_main_sport_b_wrap_title {
+						display: none;
+					}
+
+					
+					.ars_main_sport_sort {
+						width: 99%;
+					}
+				}
+
+
+
+
+				@media (max-width: 640px) { 
+
+					.ars_main_sport_sort {
+						width: 98%;
+						position: inherit;
+					}
+
+					.ars_sport_b_img {
+						height: 210px;
+						width: auto;
+					}
+				}
+
+
+
+		</style>
+
+
+
+
+
+		<div class="ars_main_sport_sort">
+			<div class="ars_main_sport_sort_title">
+				<div class="ars_main_sport_sort_title-block ars_main_sport_b_else">Выберите вид спорта</div>
+				<div class="ars_main_sport_sort_title-block ars_main_sport_b_a-a-a">Бег</div>
+				<div class="ars_main_sport_sort_title-block ars_main_sport_b_b-b-b">Беговые лыжи</div>
+				<div class="ars_main_sport_sort_title-block ars_main_sport_b_e-e-e">Горные лыжи и сноубординг</div>
+				<div class="ars_main_sport_sort_title-block ars_main_sport_b_c-c-c">Теннис</div>
+				<div class="ars_main_sport_sort_title-block ars_main_sport_b_d-d-d">Волейбол</div>
+				<div class="ars_main_sport_sort_title-block ars_main_sport_b_g-g-g">Гимнастика</div>
+				<div class="ars_main_sport_sort_title-block ars_main_sport_b_f-f-f">Показать все</div>
+			</div>
+			<div class="ars_main_sport_sort_items">
+				<!-- <option value="Все категории">Все категории</option> -->
+				<div class="ars_main_sport_sort_item ars_main_sport_sort_item-first ars_main_sport_b_a">
+					<div class="ars_main_sport_sort_item-block">Бег</div>
+				</div>
+				<div class="ars_main_sport_sort_item ars_main_sport_b_b">
+					<div class="ars_main_sport_sort_item-block">Беговые лыжи</div>
+				</div>
+				<div class="ars_main_sport_sort_item ars_main_sport_b_e">
+					<div class="ars_main_sport_sort_item-block">Горные лыжи и сноубординг</div>
+				</div>
+				<div class="ars_main_sport_sort_item ars_main_sport_b_c">
+					<div class="ars_main_sport_sort_item-block">Теннис</div>
+				</div>
+				<div class="ars_main_sport_sort_item ars_main_sport_b_d">
+					<div class="ars_main_sport_sort_item-block">Волейбол</div>
+				</div>
+				<div class="ars_main_sport_sort_item ars_main_sport_b_g">
+					<div class="ars_main_sport_sort_item-block">Гимнастика</div>
+				</div>
+				<div class="ars_main_sport_sort_item ars_main_sport_sort_item-last ars_main_sport_b_f">
+					<div class="ars_main_sport_sort_item-block">Показать все</div>
+				</div>
+			</div>
+		</div>
+		<div class="ars_main_sport_sort-arrow"></div>
+
+	</div>
+
+
+
+
+
+	<!-- first line -->
+	<div class="ars_sport_b_wrap">
+
+
+		<!-- first block -->
+		<a href="/news/944683/" class="ars_sport_b ars_main_sport_b_c-c">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-05-29/news_preview_tennis_kids_1.jpg" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">Кубок Спортмастер Pro по теннису
+					</div>
+					<div class="ars_sport_b_txt_main_p">С 27 июля по 1 августа 2020 года пройдет Кубок Спортмастер PRO по теннису для детей. Всем участникам - 3000 бонусов. Призовой фонд 240 000 рублей.</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>27 июля – 1 августа 2020</span></div>
+			</div>
+		</a>
+
+		<!-- second block -->
+		<a href="/news/953614/" class="ars_sport_b ars_main_sport_b_a-a">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-05-29/rroh.jpg" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">Гонка Героев
+					</div>
+					<div class="ars_sport_b_txt_main_p">Крутые забеги с препятствиями, основанные на испытаниях для подготовки бойцов спецподразделения. 10 км трассы и свыше 30 препятствий...</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>27 июня - 5 сентября 2020</span></div>
+			</div>
+		</a>
+
+		<!-- third block -->
+<!-- 	<a href="/news/470362/" class="ars_sport_b">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-05-29/ah.png" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">Арена героев</div>
+					<div class="ars_sport_b_txt_main_p">Уникальная полоса препятствий, не имеющая аналогов в России. На 160--метровой трассе собраны 12 самых сложных испытаний, кторые покорятся сильнейшим...</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>18 января – 25 апреля 2020</span></div>
+			</div>
+		</a> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<a href="/news/485779/" class="ars_sport_b ars_main_sport_b_a-a">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/pic3.jpg" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">Трейлраннинг
+					</div>
+					<div class="ars_sport_b_txt_main_p">Бег по природному рельефу в свободном темпе, включающий в себя элементы кросса и горного бега. Это приятное времяпрепровождение...</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>январь - октябрь 2020</span></div>
+			</div>
+		</a>
+
+
+		<a href="/news/1002959/" class="ars_sport_b ars_main_sport_b_a-a">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-05-29/run.jpg" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">ЗаБег
+					</div>
+					<div class="ars_sport_b_txt_main_p">
+						Полумарафон Забег.РФ — самое масштабное беговое событие страны.
+						11 часовых поясов, 85 городов
+						и синхронный старт для 150 000 участников! 
+					</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>2 августа 2020</span></div>
+			</div>
+		</a>
+
+
+		<a href="/news/972463/" class="ars_sport_b ars_main_sport_b_a-a">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-05-29/ah.png" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">Арена Героев
+					</div>
+					<div class="ars_sport_b_txt_main_p">
+						Уникальная полоса препятствий, не имеющая аналогов в России.
+						На 160-метровой трассе собраны 12 самых сложных испытаний, 
+						которые покорятся сильнейшим. 
+					</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>11 сентября - 13 сентября 2020</span></div>
+			</div>
+		</a>
+
+
+		<a href="/news/995879/" class="ars_sport_b ars_main_sport_b_d-d">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-05-29/fc_new.jpg" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">Кубок Дружбы 2020
+					</div>
+					<div class="ars_sport_b_txt_main_p">
+						С 22 по 27 сентября Береговая Волейбольная Лига проводит юношеский турнир Кубок Дружбы 2020. Приглашаем вас поддержать юных спортсменов и поболеть за любимую команду.
+					</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>22 - 27 сентября 2020</span></div>
+			</div>
+		</a>
+
+
+		<a href="/news/1034905/" class="ars_sport_b ars_main_sport_b_a-a">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-05-29/gh_new.jpg" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">Игры Героев</div>
+					<div class="ars_sport_b_txt_main_p">
+						Новый формат спортивной эстафеты. 
+						Тебя и твою команду ждут 3 этапа 
+						напряженной и увлекательной борьбы за 
+						звание сильнейших среди 600 участников.
+					</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>октябрь - декабрь 2020</span></div>
+			</div>
+		</a>
+
+
+		<a href="/news/999302/" class="ars_sport_b ars_main_sport_b_d-d">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-05-29/nc_new_s.jpg" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">Кубок Наций 2021
+					</div>
+					<div class="ars_sport_b_txt_main_p">
+						Кубок Наций - это международный турнир по смешанному волейболу среди команд, представляющих любительские ассоциации, лиги и клубы.
+					Организатор АНО «БВЛ»
+				</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>Май 2021</span></div>
+			</div>
+		</a>
+
+		
+		<a href="/news/470362/" class="ars_sport_b ars_main_sport_b_b-b ars_sport_b_img-block">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/pic2.jpg" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">Russia Loppet - 
+					Кубок Спортмастер PRO</div>
+					<div class="ars_sport_b_txt_main_p">В новом сезоне Russialoppet запускает долгожданный кубковый зачет для детей и юношей от 4 до 16 лет совместно с самым крупным спортивным...</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>18 января – 25 апреля 2020</span></div>
+			</div>
+		</a>
+
+		<a href="/news/1020208/" class="ars_sport_b ars_main_sport_b_e-e ars_sport_b_img-block">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-05-29/pes_new.jpg" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">
+						Кубок Спортмастера по горным лыжам и сноуборду
+					</div>
+					<div class="ars_sport_b_txt_main_p">
+						Кубок Спортмастера по горным лыжам
+						и сноуборду для детей 5—13 лет.
+						Всех участников наградят дипломами,
+						а призеры получат медали и подарки.
+					</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>9 февраля 2020</span></div>
+			</div>
+		</a>
+
+		<a href="/news/1025362/" class="ars_sport_b ars_main_sport_b_b-b ars_sport_b_img-block">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-05-29/pe_new.jpg" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">
+						Кубок Спортмастера
+						по лыжным гонкам
+					</div>
+					<div class="ars_sport_b_txt_main_p">
+						Кубок Спортмастера по лыжным гонкам
+						в Новосибирске. Призеров ждут грамоты, 
+						медали и подарочные сертификаты.
+					</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>2 февраля 2020</span></div>
+			</div>
+		</a>
+
+		
+		<a href="/news/470350/" class="ars_sport_b ars_over_b ars_main_sport_b_b-b ars_sport_b_img-block">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/pic1.jpg" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">Кубок Спортмастер PRO</div>
+					<div class="ars_sport_b_txt_main_p">Соскучились по зиме? есть отличная новость! 28 января на базе УТЦ Кавголово будут  проходить  детские соревнования по беговым лыжам...</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>28 января 2020</span></div>
+			</div>
+		</a>
+
+		<a href="/news/1027482/" class="ars_sport_b ars_main_sport_b_g-g ars_sport_b_img-block">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-05-29/pet_new.jpg" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">
+						Tурнир по физической подготовке "ВЫХОД В СИЛУ"
+					</div>
+					<div class="ars_sport_b_txt_main_p">
+						Турнир по физической подготовке «Выход 
+						в силу». Подарочные сертификаты на 
+						2000 рублей — лучшим спортсменам, 1500 бонусов Спортмастер — 
+						всем участникам.
+					</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>14 декабря – 15 декабря 2019</span></div>
+			</div>
+		</a>
+
+		<a href="/news/30720098/" class="ars_sport_b ars_main_sport_b_c-c ars_sport_b_img-block">
+			<div class="ars_sport_b_img">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-05-29/jd_new.png" alt="Фото с мероприятия">
+			</div>
+			<div class="ars_sport_b_txt_wrap">
+				<div class="ars_sport_b_txt_main">
+					<div class="ars_sport_b_txt_main_h1">
+						Кубок Спортмастер по теннису 2019
+					</div>
+					<div class="ars_sport_b_txt_main_p">
+						По итогам 3 этапов участнику, набравшему
+						большее количество баллов,
+						вручается путевка на теннисный турнир «Roland Garros».
+					</div>
+				</div>
+				<div class="ars_sport_b_txt_date"><img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png" width="15" height="15"><span>май – декабрь 2019</span></div>
+			</div>
+		</a>
+	</div>
+
+
+
+
+	<script language="JavaScript">
+
+
+		// для мобильной версии перевести hover, на click
+		$(".ars_main_sport_sort_title, .ars_main_sport_sort_item").click(function(){
+			$(".ars_main_sport_sort").toggleClass("ars_main_sport_sort-active");
+			$(".ars_main_sport_sort-arrow").toggleClass("ars_main_sport_sort-arrow-active");
+			// $(".nav").toggleClass("nav-column"); 
+			return false;
+		});
+
+		$(".ars_main_sport_sort_item").click(function () {
+			$(".ars_main_sport_sort_item").removeClass("ars_main_sport_sort_item-active");
+			$(this).addClass("ars_main_sport_sort_item-active");
+			$(".ars_main_sport_sort_title").addClass("ars_main_sport_sort_title-active");
+			$(".ars_main_sport_sort-arrow").addClass("ars_main_sport_sort-arrow-white");
+		});
+
+
+		var one = document.querySelector('.ars_main_sport_b_a');
+		console.log(one.textContent);
+
+			$(".ars_main_sport_b_a-a-a").hide();
+			$(".ars_main_sport_b_b-b-b").hide();
+			$(".ars_main_sport_b_c-c-c").hide();
+			$(".ars_main_sport_b_d-d-d").hide();
+			$(".ars_main_sport_b_e-e-e").hide();
+			$(".ars_main_sport_b_g-g-g").hide();
+			$(".ars_main_sport_b_f-f-f").hide();
+
+
+		$(".ars_main_sport_b_a").click(function () {
+			$(".ars_main_sport_b_a-a").show();
+			$(".ars_main_sport_b_a-a-a").show();
+
+			$(".ars_main_sport_b_b-b").hide();
+			$(".ars_main_sport_b_b-b-b").hide();
+
+			$(".ars_main_sport_b_c-c").hide();
+			$(".ars_main_sport_b_c-c-c").hide();
+
+			$(".ars_main_sport_b_d-d").hide();
+			$(".ars_main_sport_b_d-d-d").hide();
+
+			$(".ars_main_sport_b_e-e").hide();
+			$(".ars_main_sport_b_e-e-e").hide();
+
+			$(".ars_main_sport_b_g-g").hide();
+			$(".ars_main_sport_b_g-g-g").hide();
+
+			$(".ars_main_sport_b_f-f-f").hide();			
+			$(".ars_main_sport_b_else").hide();
+		});
+
+		$(".ars_main_sport_b_b").click(function () {
+			$(".ars_main_sport_b_a-a").hide();
+			$(".ars_main_sport_b_a-a-a").hide();
+
+			$(".ars_main_sport_b_b-b").show();
+			$(".ars_main_sport_b_b-b-b").show();
+
+			$(".ars_main_sport_b_c-c").hide();
+			$(".ars_main_sport_b_c-c-c").hide();
+
+			$(".ars_main_sport_b_d-d").hide();
+			$(".ars_main_sport_b_d-d-d").hide();
+
+			$(".ars_main_sport_b_e-e").hide();
+			$(".ars_main_sport_b_e-e-e").hide();
+
+			$(".ars_main_sport_b_g-g").hide();
+			$(".ars_main_sport_b_g-g-g").hide();
+
+			$(".ars_main_sport_b_f-f-f").hide();			
+			$(".ars_main_sport_b_else").hide();
+		});
+
+		$(".ars_main_sport_b_c").click(function () {
+			$(".ars_main_sport_b_a-a").hide();
+			$(".ars_main_sport_b_a-a-a").hide();
+
+			$(".ars_main_sport_b_b-b").hide();
+			$(".ars_main_sport_b_b-b-b").hide();
+
+			$(".ars_main_sport_b_c-c").show();
+			$(".ars_main_sport_b_c-c-c").show();
+
+			$(".ars_main_sport_b_d-d").hide();
+			$(".ars_main_sport_b_d-d-d").hide();
+
+			$(".ars_main_sport_b_e-e").hide();
+			$(".ars_main_sport_b_e-e-e").hide();
+
+			$(".ars_main_sport_b_g-g").hide();
+			$(".ars_main_sport_b_g-g-g").hide();
+
+			$(".ars_main_sport_b_f-f-f").hide();			
+			$(".ars_main_sport_b_else").hide();
+		});
+
+		$(".ars_main_sport_b_d").click(function () {
+			$(".ars_main_sport_b_a-a").hide();
+			$(".ars_main_sport_b_a-a-a").hide();
+
+			$(".ars_main_sport_b_b-b").hide();
+			$(".ars_main_sport_b_b-b-b").hide();
+
+			$(".ars_main_sport_b_c-c").hide();
+			$(".ars_main_sport_b_c-c-c").hide();
+
+			$(".ars_main_sport_b_d-d").show();
+			$(".ars_main_sport_b_d-d-d").show();
+
+			$(".ars_main_sport_b_e-e").hide();
+			$(".ars_main_sport_b_e-e-e").hide();
+
+			$(".ars_main_sport_b_g-g").hide();
+			$(".ars_main_sport_b_g-g-g").hide();
+
+			$(".ars_main_sport_b_f-f-f").hide();			
+			$(".ars_main_sport_b_else").hide();
+		});
+
+		$(".ars_main_sport_b_e").click(function () {
+			$(".ars_main_sport_b_a-a").hide();
+			$(".ars_main_sport_b_a-a-a").hide();
+
+			$(".ars_main_sport_b_b-b").hide();
+			$(".ars_main_sport_b_b-b-b").hide();
+
+			$(".ars_main_sport_b_c-c").hide();
+			$(".ars_main_sport_b_c-c-c").hide();
+
+			$(".ars_main_sport_b_d-d").hide();
+			$(".ars_main_sport_b_d-d-d").hide();
+
+			$(".ars_main_sport_b_e-e").show();
+			$(".ars_main_sport_b_e-e-e").show();
+
+			$(".ars_main_sport_b_g-g").hide();
+			$(".ars_main_sport_b_g-g-g").hide();
+
+			$(".ars_main_sport_b_f-f-f").hide();			
+			$(".ars_main_sport_b_else").hide();
+		});
+
+		$(".ars_main_sport_b_g").click(function () {
+			$(".ars_main_sport_b_a-a").hide();
+			$(".ars_main_sport_b_a-a-a").hide();
+
+			$(".ars_main_sport_b_b-b").hide();
+			$(".ars_main_sport_b_b-b-b").hide();
+
+			$(".ars_main_sport_b_c-c").hide();
+			$(".ars_main_sport_b_c-c-c").hide();
+
+			$(".ars_main_sport_b_d-d").hide();
+			$(".ars_main_sport_b_d-d-d").hide();
+
+			$(".ars_main_sport_b_e-e").hide();
+			$(".ars_main_sport_b_e-e-e").hide();
+
+			$(".ars_main_sport_b_g-g").show();
+			$(".ars_main_sport_b_g-g-g").show();
+
+			$(".ars_main_sport_b_f-f-f").hide();			
+			$(".ars_main_sport_b_else").hide();
+		});
+		
+		$(".ars_main_sport_b_f").click(function () {
+			$(".ars_main_sport_b_a-a").show();
+			$(".ars_main_sport_b_a-a-a").hide();
+
+			$(".ars_main_sport_b_b-b").show();
+			$(".ars_main_sport_b_b-b-b").hide();
+
+			$(".ars_main_sport_b_c-c").show();
+			$(".ars_main_sport_b_c-c-c").hide();
+
+			$(".ars_main_sport_b_d-d").show();
+			$(".ars_main_sport_b_d-d-d").hide();
+
+			$(".ars_main_sport_b_e-e").show();
+			$(".ars_main_sport_b_e-e-e").hide();
+
+			$(".ars_main_sport_b_g-g").show();
+			$(".ars_main_sport_b_g-g-g").hide();
+
+			$(".ars_main_sport_b_f-f-f").show();			
+			$(".ars_main_sport_b_else").hide();
+		});
+	</script>
+
+
+</div>
