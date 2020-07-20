@@ -1,0 +1,921 @@
+<link rel="stylesheet" href="/sportmaster.ru/css/proximanova.css">
+
+<style>
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.ttf?v=1.0') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.eot?v=1.0#iefix') format('embedded-opentype'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.woff?v=1.0') format('woff'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.ttf?v=1.0') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.ttf?v=1.0') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.eot?v=1.0#iefix') format('embedded-opentype'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.woff?v=1.0') format('woff'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.ttf?v=1.0') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.ttf?v=1.0') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/*общее*/
+
+body {
+    
+	background: #efefef;
+}
+
+.roh-news_space-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.roh-news_title {
+	font-size: 52px;
+	font-weight: 900;
+}
+
+.roh-new_paragraph {
+    font-size: 16px;
+}
+
+
+.roh-news_span-red {
+	color: #e02020;
+}
+
+.roh-news_li-none {
+	list-style-type: none;
+}
+
+.roh-news_ul-none {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.roh-news_uppercase {
+	text-transform: uppercase;
+}
+
+
+
+
+
+.roh-news_background {
+	background: #efefef;
+	border-radius: 10px;
+}
+
+.roh-news_container {
+	width: 100%;
+	font-family: 'Proxima Nova';
+	color: #000;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+/*.roh-news_container img {
+	max-width: 100%;
+	vertical-align: middle;
+}*/
+
+.roh-news_container-block {
+	padding: 0 40px;
+}
+
+
+/*first block*/
+
+.roh-new_intro {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_headerr.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-top: 248px;
+	margin-bottom: 20px;
+	padding-bottom: 39px;
+	border-radius: 10px;
+	background-color: #ffff;
+}
+
+.roh-new_intro_top {
+	text-align: center;
+	font-weight: 900;
+	margin-bottom: 370px;
+}
+
+.roh-new_intro_title {
+	font-size: 48px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.roh-new_intro_title::before {
+	content: '';
+	width: 447px;
+	height: 9px;
+	background: #ec1c24;
+	position: absolute;
+	bottom: -10px;
+}
+
+.roh-new_intro_suptitle {
+	font-size: 30px;
+	margin-top: 17px;
+}
+
+.roh-new_intro_suptitle span {
+	font-size: 18px;
+	flex-direction: column;
+	display: flex;
+}
+
+.roh-new_intro_dac {
+	font-weight: 700;
+	max-width: 100%;
+	white-space: nowrap;
+	display: flex;
+		overflow-x: scroll;
+		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
+}
+
+.roh-new_intro_dac_item {
+	width: 20%;
+	height: 75px;
+	padding: 17px 0 18px 13px;
+	margin: 0 20px;
+
+	border: 1px #dfdfdf solid;
+	border-radius: 5px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.roh-new_intro_dac_item_date {
+	color: #000;
+	opacity: 0.4;
+	font-size: 18px;
+}
+
+/*secong block*/
+.roh-new_emotion {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_emotion.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.roh-new_emotion_content {
+	max-width: 438px;
+}
+
+.roh-new_emotion_title {
+    width: 420px;
+}
+
+.roh-new_emotion_description {
+    width: 100%;
+    margin: 30px 0 38px 0;
+}
+
+.roh-new_emotion_link {
+	font-size: 12px;
+	color: #ffff;
+	text-decoration: none;
+	background: #ed1c24;
+	padding: 10px 15px;
+	border-radius: 3px;
+}
+
+.roh-new_emotion_link:hover {
+	background: #fd4b51;
+	color: #ffff;
+}
+
+
+ /*third block */
+
+.roh-new_bonus {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_bonus.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 40px;
+	padding-bottom: 70px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.roh-new_bonus_title {
+    width: 413px;
+}
+
+.roh-new_bonus_steps {
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.roh-new_bonus_step {
+	display: flex;
+	width: 28.7%;
+	min-width: 260px;
+	margin: 12px 0;
+}
+
+.roh-new_bonus_step-number {
+	font-size: 40px;
+	font-weight: 900;
+	margin-right: 20px;
+}
+
+.roh-new_bonus_step-text {
+ 	line-height: 1.63;
+ 	font-weight: 600;
+}
+
+.roh-new_bonus_step-text a {
+ 	text-decoration: none;
+}
+
+.roh-new_bonus_step-text-three span {
+	font-size: 12px;
+}
+
+.roh-new_bonus_card {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.roh-new_bonus_card::before {
+	content: '';
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_new_cards.png);
+	background-repeat: no-repeat;
+	width: 42%;
+	height: 340px;
+	min-width: 337px;
+}
+
+.roh-new_bonus_card_content {
+	min-width: 341px;
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding-top: 28px;
+}
+
+.roh-new_bonus_card_title {
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.roh-new_bonus_card_title span {
+	color: #e02020;
+}
+
+.roh-new_bonus_card_suptitle {
+	font-size: 21px;
+}
+
+.roh-new_bonus_card_register {
+	margin-top: 43px;
+}
+
+.roh-new_bonus_card_register-btn {
+	color: #ffff;
+	font-size: 12px;
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: #ed1c24;
+	border: 2px solid #ed1c24;
+	padding: 10px 18px;
+}
+
+.roh-new_bonus_card_register-btn:hover {
+	background: #fd4b51;
+	border: 2px solid #fd4b51;
+	color: #ffff;
+}
+
+.roh-new_bonus_card_detailed-btn {
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none;
+	border-radius: 3px;
+	border: solid 2px #000000;
+	padding: 10px 18px;
+}
+
+.roh-new_bonus_card_detailed-btn:hover {
+	background: #fbdfdf6b;
+	color: #000000;
+}
+
+.roh-new_bonus_card_login {
+    margin-top: 23px;
+}
+
+.roh-new_bonus_card_login {
+	color: #7b7b7b;
+	font-size: 16px;
+}
+
+.roh-new_bonus_card_login-btn {
+	font-weight: 600;
+	color: #000000;
+}
+
+.roh-new_bonus_card_login-btn:hover {
+	color: #2000c4;
+}
+
+/*fourth block*/
+/*fifth block*/
+
+.roh-new_man-set {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_man.jpg);
+}
+
+.roh-new_woman-set {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_woman.jpg);
+}
+
+.roh-new_man-set,
+.roh-new_woman-set {
+	padding: 25px 15px 28px 15px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.roh-new_man-set_title,
+.roh-new_woman-set_title {
+	font-size: 36px;
+	font-weight: 900;
+	color: #ffff;
+	display: flex;
+	align-items: center;
+	width: 22%;
+	min-width: 219px;
+	margin: 30px 0;
+	text-align: start;
+}
+
+.roh-new_man-set_title {
+}
+
+.roh-new_woman-set_title {
+	display: flex;
+	justify-content: end;
+}
+
+.roh-new_man-set_product,
+.roh-new_woman-set_product {
+	width: 75.6%;
+}
+
+.roh-new_man-set_product_content,
+.roh-new_woman-set_product_content {
+    margin-bottom: 26px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.roh-new_man-set_product_item,
+.roh-new_woman-set_product_item {
+	border-radius: 12px;
+	background-color: #ffff;
+	padding: 24px 25px 24px 22px;
+	width: 25.7%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-width: 181px;
+	margin: 0 5px;
+}
+
+.roh-new_man-set_product_item_container-img,
+.roh-new_woman-set_product_item_container-img {
+	display: flex;
+	justify-content: center;
+	height: 200px;
+	align-items: center;
+}
+
+.roh-new_man-set_product_item_img,
+.roh-new_woman-set_product_item_img {
+	width: 200px;
+	display: block;
+	justify-content: center;
+	margin-bottom: 13px;
+	align-items: center;
+	text-align: center;
+}
+
+.roh-new_man-set_product_item_text,
+.roh-new_woman-set_product_item_text {
+	width: 100%;
+}
+
+
+.roh-new_man-set_product_item_title,
+.roh-new_man-set_product_item_brand,
+.roh-new_woman-set_product_item_title,
+.roh-new_woman-set_product_item_brand {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.roh-new_man-set_product_item_not-price,
+.roh-new_woman-set_product_item_not-price {
+	font-size: 20px;
+	font-weight: 600;
+	position: relative;
+}
+
+.roh-new_man-set_product_item_not-price::before,
+.roh-new_woman-set_product_item_not-price::before {
+	content: '';
+	position: absolute;
+	width: 81px;
+	height: 1px;
+	background: #000;
+	top: 12px;
+	transform: rotate(-11deg);
+	left: -5px;
+}
+
+.roh-new_woman-set_product_item-leg .roh-new_woman-set_product_item_not-price::before {
+	display: none;
+}
+
+.roh-new_man-set_product_item_not-price span,
+.roh-new_woman-set_product_item_not-price span {
+	position: relative;
+}
+
+.roh-new_man-set_product_item_not-price span::before,
+.roh-new_woman-set_product_item_not-price span::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 2px;
+	bottom: 8px;
+	background: #000;
+
+}
+
+.roh-new_man-set_product_item_discount,
+.roh-new_woman-set_product_item_discount {
+    width: 67%;
+    margin-top: 2px;
+}
+
+.roh-new_man-set_product_item_discount_price,
+.roh-new_woman-set_product_item_discount_price {
+	font-size: 14px;
+	font-weight: 900;
+	color: #ed1c24;
+}
+
+.roh-new_man-set_product_item_discount_perc,
+.roh-new_woman-set_product_item_discount_perc {
+	color: #ffff;
+	font-size: 12px;
+	font-weight: 900;
+	border-radius: 4px;
+	background-color: #ed1c24;
+	padding: 2px 9px;
+}
+
+.roh-new_man-set_product_link-buy,
+.roh-new_woman-set_product_link-buy {
+	color: #ffff;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: #ed1c24;
+	padding: 8px 31px;
+	border: 2px #ed1c24 solid;
+	margin-right: 15px;
+}
+
+.roh-new_man-set_product_link-buy:hover,
+.roh-new_woman-set_product_link-buy:hover {
+	background-color: #fd4b51;
+	border: 2px #fd4b51 solid;
+	color: #ffff;
+}
+
+.roh-new_man-set_product_link-show,
+.roh-new_woman-set_product_link-show {
+	color: #ffff;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 8px 31px;
+	border: 2px #ffff solid;
+}
+
+.roh-new_man-set_product_link-show:hover,
+.roh-new_woman-set_product_link-show:hover {
+	color: #ffff;
+	background: #fbdfdf6b;
+}
+
+
+/*sixth block*/
+
+.roh-new_more-items_top {
+    display: flex;
+}
+
+.roh-new_more-items_top_left {
+	width: 78%;
+}
+
+.roh-new_more-items_shirt {
+	/*background: linear-gradient(to top, #a3b182 , #a0b37d);*/
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_shirts.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0 0 20px 0;
+	border-radius: 10px 0 0 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.roh-new_more-items_shirt-hover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+
+.roh-new_more-items_shirt-hover:hover + .roh-new_more-items_links {
+	opacity: 1;
+}
+
+.roh-new_more-items_shirt_suptitle {
+	margin-bottom: 98px;
+}
+
+.roh-new_more-items_man-btn-hover {
+	opacity: 1;
+	position: absolute;
+	bottom: -4px;
+	right: 26%;
+	transition: 0.2s;
+}
+
+.roh-new_more-items_woman-btn-hover {
+	opacity: 1;
+	position: absolute;
+	bottom: -4px;
+	right: 5%;
+	transition: 0.2s;
+}
+
+.roh-new_more-items_man-btn-hover img {
+	width: 197px;
+}
+
+.roh-new_more-items_woman-btn-hover img {
+	width: 232px;
+}
+
+.roh-new_more-items_links {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	font-weight: 600;
+	width: 100%;
+	opacity: 0;
+}
+
+.roh-new_more-items_links:hover {
+	opacity: 1;
+}
+
+.roh-new_more-items_more {
+	background: #ffff;
+	padding: 64px 20px 64px 20px;
+}
+
+.roh-new_more-items_more_title {
+	color: #000;
+	font-size: 52px;
+	font-weight: 900;
+}
+
+.roh-new_more-items_more_title span {
+	color: #e02020;
+}
+
+
+.roh-new_more-items_top_shoes {
+	padding-top: 22px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_shoes.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 39%;
+	min-width: 297px;
+	border-radius: 0 10px 0 0;
+	position: relative;
+}
+
+.roh-new_more-items_bottom {
+    display: flex;
+}
+
+.roh-new_more-items_pants {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_pants.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 28px 0 20px 0;
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width: 215px;
+	border-radius: 0 0 0 10px;
+	position: relative;
+}
+
+.roh-new_more-items_pants_title {
+	margin-bottom: 33px;
+}
+
+.roh-new_more-items_acces {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_acces.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 28px 0 20px 0;
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 0 0 10px 0;
+	background-position: -31px 0px;
+	position: relative;
+}
+
+.roh-new_more-items_shirt_title,
+.roh-new_more-items_top_shoes_title,
+.roh-new_more-items_acces_title,
+.roh-new_more-items_pants_title {
+	font-size: 40px;
+	font-weight: 900;
+	color: #ffff;
+	padding-left: 20px;
+}
+
+.roh-new_more-items_shirt_suptitle,
+.roh-new_more-items_top_shoes_suptitle,
+.roh-new_more-items_acces_suptitle,
+.roh-new_more-items_pants_suptitle {
+	font-size: 12px;
+	font-weight: 600;
+	color: #ffff;
+}
+
+
+.roh-new_more-items_shirt_title span,
+.roh-new_more-items_top_shoes_title span,
+.roh-new_more-items_acces_title span,
+.roh-new_more-items_pants_title span {
+	color: #e02020;
+}
+
+
+/*arrow*/
+
+.roh-new_more-items_man-btn,
+.roh-new_more-items_woman-btn {
+	padding: 0 20px;
+	margin: 10px 0 0 0;
+}
+
+.roh-new_more-items_man-btn a,
+.roh-new_more-items_woman-btn a {
+	position: relative;
+	align-items: center;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffff;
+	text-decoration: none;
+}
+
+.roh-new_more-items_man-btn a:hover,
+.roh-new_more-items_woman-btn a:hover {
+	opacity: 0.5;
+}
+
+.roh-new_more-items_arrow {
+	position: absolute;
+	left: 93px;
+	top: 7px;
+}
+
+.roh-new_more-items_acces .roh-new_more-items_arrow {
+	left: 64px;
+}
+
+.roh-new_more-items_arrow-lr {
+	cursor: pointer;
+	position: relative;
+	width: 15px;
+	height: 2px;
+	margin: 0px;
+	background: #ffff;
+}
+
+.roh-new_more-items_arrow-lr::after {
+	content: '';
+	position: absolute;
+	transform: rotate(36deg);
+	width: 8px;
+	height: 2px;
+	background: #ffff;
+	right: 0;
+	top: -2px;
+}
+
+.roh-new_more-items_arrow-lr::before {
+	content: '';
+	position: absolute;
+	transform: rotate(-36deg);
+	width: 8px;
+	height: 2px;
+	background: #ffff;
+	right: 0;
+	top: 2px;
+}
+
+/*seventh block*/
+
+.roh-new_condition {
+	color: #777777;
+	font-size: 14px;
+	margin-top: 50px;
+	padding-bottom: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+</style>
+
+
+<div class="roh-news_background">
+	<section class="roh-news_container">
+
+		<!-- first block -->
+		<div class="roh-new_intro">
+			<div class="roh-new_intro_top roh-news_uppercase">
+				<!-- <div class="roh-new_intro_title">
+					Гонка героев
+				</div>
+				<div class="roh-new_intro_suptitle">
+					Вернем 100% стартовых взносов 
+					<span>Бонусами на карту спортмастер*</span>
+				</div> -->
+			</div>
+
+			<style>
+
+			.roh-new_intro_do {
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				}
+
+			.roh-new_intro_do_do {
+				-webkit-box-sizing: border-box;
+				box-sizing: border-box;
+				}
+			</style>
+
+			<div class="roh-new_intro_do_do">
+				<div class="roh-new_intro_do">
+					<ul class="roh-new_intro_dac roh-news_space-between roh-news_ul-none">
+						<li class="roh-new_intro_dac_item roh-news_li-none">
+							<div class="roh-new_intro_dac_item_date">
+								20 июня
+							</div>
+							<div class="roh-new_intro_dac_item_city roh-new_paragraph">
+								<div>
+									<span class="roh-news_span-red">С</span>анкт-Петербург
+								</div>
+							</div>
+						</li>
+						<li class="roh-new_intro_dac_item roh-news_li-none">
+							<div class="roh-new_intro_dac_item_date">
+								11 июля
+							</div>
+							<div class="roh-new_intro_dac_item_city roh-new_paragraph">
+								<div>
+									<span class="roh-news_span-red">М</span>осква
+								</div>
+								<div>
+									<span class="roh-news_span-red">Н</span>овосибирск
+								</div>
+							</div>
+						</li>
+						<li class="roh-new_intro_dac_item roh-news_li-none">
+							<div class="roh-new_intro_dac_item_date">
+								25 июля
+							</div>
+							<div class="roh-new_intro_dac_item_city roh-new_paragraph">
+								<div>
+									<span class="roh-news_span-red">В</span>ладивосток
+								</div>
+								<div>
+									<span class="roh-news_span-red">Е</span>катеринбург
+								</div>
+							</div>
+						</li>
+						<li class="roh-new_intro_dac_item roh-news_li-none">
+							<div class="roh-new_intro_dac_item_date">
+								8 августа
+							</div>
+							<div class="roh-new_intro_dac_item_city roh-new_paragraph">
+								<div>
+									<span class="roh-news_span-red">К</span>азань
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+
+	</section>
+</div>
+	
+

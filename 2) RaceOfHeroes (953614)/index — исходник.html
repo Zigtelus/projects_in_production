@@ -1,0 +1,1968 @@
+<link rel="stylesheet" href="/sportmaster.ru/css/proximanova.css">
+
+<style>
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.ttf?v=1.0') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.eot?v=1.0#iefix') format('embedded-opentype'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.woff?v=1.0') format('woff'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.ttf?v=1.0') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.ttf?v=1.0') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.eot?v=1.0#iefix') format('embedded-opentype'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.woff?v=1.0') format('woff'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.ttf?v=1.0') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.ttf?v=1.0') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/*общее*/
+
+body {
+    
+	background: #efefef;
+}
+
+.sm-news__common .sm-news__date{display: none;}
+
+
+.roh-news_space-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+.roh-news_title {
+	font-size: 52px;
+	font-weight: 900;
+}
+
+.roh-new_paragraph {
+    font-size: 16px;
+}
+
+
+.roh-news_span-red {
+	color: #e02020;
+}
+
+.roh-news_li-none {
+	list-style-type: none;
+}
+
+.roh-news_ul-none {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.roh-news_uppercase {
+	text-transform: uppercase;
+}
+
+
+
+
+
+.roh-news_background {
+	background: #efefef;
+	border-radius: 10px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.roh-news_container {
+	width: 100%;
+	max-width: 990px;
+	font-family: 'Proxima Nova';
+	color: #000;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+/*.roh-news_container img {
+	max-width: 100%;
+	vertical-align: middle;
+}*/
+
+.roh-news_container-block {
+	padding: 0 40px;
+}
+
+
+/*first block*/
+
+.roh-new_intro {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_headerr.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding-top: 248px;
+	margin-bottom: 20px;
+	padding-bottom: 39px;
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+
+.roh-new_intro_top {
+	text-align: center;
+	font-weight: 900;
+	margin-bottom: 370px;
+}
+
+.roh-new_intro_title {
+	font-size: 48px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.roh-new_intro_title::before {
+	content: '';
+	width: 447px;
+	height: 9px;
+	background: #ec1c24;
+	position: absolute;
+	bottom: -10px;
+}
+
+.roh-new_intro_suptitle {
+	font-size: 30px;
+	margin-top: 17px;
+}
+
+.roh-new_intro_suptitle span {
+	font-size: 18px;
+	flex-direction: column;
+	display: flex;
+}
+
+.roh-new_intro_dac {
+	font-weight: 700;
+	max-width: 100%;
+	white-space: nowrap;
+	display: flex;
+}
+
+
+
+.roh-new_intro_dac li:nth-child(3) {
+	width: 23%;
+}
+
+.roh-new_intro_dac_item {
+	width: 20%;
+	height: 75px;
+	padding: 17px 0 18px 13px;
+	margin: 0 10px;
+
+	border: 1px #dfdfdf solid;
+	border-radius: 5px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.roh-new_intro_dac_item_date {
+	color: #000;
+	opacity: 0.4;
+	font-size: 18px;
+}
+
+/*secong block*/
+.roh-new_emotion {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_emotion.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 40px;
+	padding-bottom: 50px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+
+.roh-new_emotion_content {
+	max-width: 438px;
+}
+
+.roh-new_emotion_title {
+    width: 420px;
+}
+
+.roh-new_emotion_description {
+    width: 100%;
+    margin: 30px 0 38px 0;
+}
+
+.roh-new_emotion_link {
+	font-size: 12px;
+	color: #ffffff;
+	text-decoration: none;
+	background: #ed1c24;
+	padding: 10px 15px;
+	border-radius: 3px;
+}
+
+.roh-new_emotion_link:hover {
+	background: #fd4b51;
+	color: #ffffff;
+}
+
+
+ /*third block */
+
+.roh-new_bonus {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_bonus.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 40px;
+	padding-bottom: 70px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.roh-new_bonus_title {
+    width: 413px;
+}
+
+.roh-new_bonus_steps {
+	flex-wrap: wrap;
+	width: 100%;
+	margin-top: 40px;
+}
+
+.roh-new_bonus_step {
+	display: flex;
+	width: 28.7%;
+	min-width: 260px;
+	margin: 12px 0;
+}
+
+.roh-new_bonus_step-number {
+	font-size: 40px;
+	font-weight: 900;
+	margin-right: 20px;
+}
+
+.roh-new_bonus_step-text {
+ 	line-height: 1.63;
+ 	font-weight: 600;
+}
+
+.roh-new_bonus_step-text a {
+ 	text-decoration: none;
+}
+
+.roh-new_bonus_step-text-three span {
+	font-size: 12px;
+}
+
+.roh-new_bonus_card {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.roh-new_bonus_card::before {
+	content: '';
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_new_cards.png);
+	background-repeat: no-repeat;
+	width: 42%;
+	height: 340px;
+	min-width: 337px;
+}
+
+.roh-new_bonus_card_content {
+	min-width: 341px;
+	width: 55%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding-top: 28px;
+}
+
+.roh-new_bonus_card_title {
+	font-size: 35px;
+	font-weight: 700;
+}
+
+.roh-new_bonus_card_title span {
+	color: #e02020;
+}
+
+.roh-new_bonus_card_suptitle {
+	font-size: 21px;
+}
+
+.roh-new_bonus_card_register {
+	margin-top: 43px;
+}
+
+.roh-new_bonus_card_register-btn {
+	color: #ffffff;
+	font-size: 12px;
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: #ed1c24;
+	border: 2px solid #ed1c24;
+	padding: 10px 18px;
+}
+
+.roh-new_bonus_card_register-btn:hover {
+	background: #fd4b51;
+	border: 2px solid #fd4b51;
+	color: #ffffff;
+}
+
+.roh-new_bonus_card_detailed-btn {
+	color: #000000;
+	font-size: 12px;
+	text-decoration: none;
+	border-radius: 3px;
+	border: solid 2px #000000;
+	padding: 10px 18px;
+}
+
+.roh-new_bonus_card_detailed-btn:hover {
+	background: #fbdfdf6b;
+	color: #000000;
+}
+
+.roh-new_bonus_card_login {
+    margin-top: 23px;
+}
+
+.roh-new_bonus_card_login {
+	color: #7b7b7b;
+	font-size: 16px;
+}
+
+.roh-new_bonus_card_login-btn {
+	font-weight: 600;
+	color: #000000;
+}
+
+.roh-new_bonus_card_login-btn:hover {
+	color: #2000c4;
+}
+
+/*fourth block*/
+/*fifth block*/
+
+.roh-new_man-set {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_man.jpg);
+}
+
+.roh-new_woman-set {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_woman.jpg);
+}
+
+.roh-new_man-set,
+.roh-new_woman-set {
+	padding: 25px 15px 28px 15px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.roh-new_man-set_title,
+.roh-new_woman-set_title {
+	font-size: 36px;
+	font-weight: 900;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	width: 22%;
+	min-width: 219px;
+	margin: 30px 0;
+	text-align: start;
+}
+
+.roh-new_man-set_title {
+}
+
+.roh-new_woman-set_title {
+	display: flex;
+	justify-content: end;
+}
+
+.roh-new_man-set_product,
+.roh-new_woman-set_product {
+	width: 75.6%;
+}
+
+.roh-new_man-set_product_content,
+.roh-new_woman-set_product_content {
+    margin-bottom: 26px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.roh-new_man-set_product_item,
+.roh-new_woman-set_product_item {
+	border-radius: 12px;
+	background-color: #ffffff;
+	padding: 24px 25px 24px 22px;
+	width: 25.7%;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	min-width: 181px;
+	margin: 0 5px;
+}
+
+.roh-new_man-set_product_item_container-img,
+.roh-new_woman-set_product_item_container-img {
+	display: flex;
+	justify-content: center;
+	height: 200px;
+	align-items: center;
+}
+
+.roh-new_man-set_product_item_img,
+.roh-new_woman-set_product_item_img {
+	width: 200px;
+	display: block;
+	justify-content: center;
+	margin-bottom: 13px;
+	align-items: center;
+	text-align: center;
+}
+
+.roh-new_man-set_product_item_text,
+.roh-new_woman-set_product_item_text {
+	width: 100%;
+}
+
+
+.roh-new_man-set_product_item_title,
+.roh-new_man-set_product_item_brand,
+.roh-new_woman-set_product_item_title,
+.roh-new_woman-set_product_item_brand {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.roh-new_man-set_product_item_not-price,
+.roh-new_woman-set_product_item_not-price {
+	font-size: 20px;
+	font-weight: 600;
+	position: relative;
+}
+
+.roh-new_man-set_product_item_not-price::before,
+.roh-new_woman-set_product_item_not-price::before {
+	content: '';
+	position: absolute;
+	width: 81px;
+	height: 1px;
+	background: #000;
+	top: 12px;
+	transform: rotate(-11deg);
+	left: -5px;
+}
+
+.roh-new_woman-set_product_item-leg .roh-new_woman-set_product_item_not-price::before {
+	display: none;
+}
+
+.roh-new_man-set_product_item_not-price span,
+.roh-new_woman-set_product_item_not-price span {
+	position: relative;
+}
+
+.roh-new_man-set_product_item_not-price span::before,
+.roh-new_woman-set_product_item_not-price span::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 2px;
+	bottom: 8px;
+	background: #000;
+
+}
+
+.roh-new_man-set_product_item_discount,
+.roh-new_woman-set_product_item_discount {
+    width: 67%;
+    margin-top: 2px;
+}
+
+.roh-new_man-set_product_item_discount_price,
+.roh-new_woman-set_product_item_discount_price {
+	font-size: 14px;
+	font-weight: 900;
+	color: #ed1c24;
+}
+
+.roh-new_man-set_product_item_discount_perc,
+.roh-new_woman-set_product_item_discount_perc {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 900;
+	border-radius: 4px;
+	background-color: #ed1c24;
+	padding: 2px 9px;
+}
+
+.roh-new_man-set_product_link-buy,
+.roh-new_woman-set_product_link-buy {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 3px;
+	background-color: #ed1c24;
+	padding: 8px 31px;
+	border: 2px #ed1c24 solid;
+	margin-right: 15px;
+}
+
+.roh-new_man-set_product_link-buy:hover,
+.roh-new_woman-set_product_link-buy:hover {
+	background-color: #fd4b51;
+	border: 2px #fd4b51 solid;
+	color: #ffffff;
+}
+
+.roh-new_man-set_product_link-show,
+.roh-new_woman-set_product_link-show {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: none;
+	border-radius: 3px;
+	padding: 8px 31px;
+	border: 2px #ffff solid;
+}
+
+.roh-new_man-set_product_link-show:hover,
+.roh-new_woman-set_product_link-show:hover {
+	color: #ffffff;
+	background: #fbdfdf6b;
+}
+
+
+/*sixth block*/
+
+.roh-new_more-items_top {
+    display: flex;
+}
+
+.roh-new_more-items_top_left {
+	width: 78%;
+	display: flex;
+	flex-direction: column;
+}
+
+.roh-new_more-items_shirt {
+	/*background: linear-gradient(to top, #a3b182 , #a0b37d);*/
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_shirts.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 20px 0 20px 0;
+	border-radius: 10px 0 0 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.roh-new_more-items_shirt-hover {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+}
+
+.roh-new_more-items_shirt-hover:hover + .roh-new_more-items_links {
+	opacity: 1;
+}
+
+.roh-new_more-items_shirt_suptitle {
+	margin-bottom: 81px;
+}
+
+.roh-new_more-items_man-btn-hover {
+	opacity: 1;
+	position: absolute;
+	bottom: -4px;
+	right: 26%;
+	transition: 0.2s;
+}
+
+.roh-new_more-items_woman-btn-hover {
+	opacity: 1;
+	position: absolute;
+	bottom: -4px;
+	right: 5%;
+	transition: 0.2s;
+}
+
+.roh-new_more-items_man-btn-hover img {
+	width: 197px;
+}
+
+.roh-new_more-items_woman-btn-hover img {
+	width: 232px;
+}
+
+.roh-new_more-items_links {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	font-weight: 600;
+	width: 100%;
+	opacity: 0;
+}
+
+.roh-new_more-items_links:hover {
+	opacity: 1;
+}
+
+.roh-new_more-items_more {
+	background: #ffffff;
+	/*padding: 49px 35px 49px 20px;*/
+}
+
+.roh-new_more-items_more_title {
+	color: #000;
+	text-decoration: none;
+	font-size: 52px;
+	font-weight: 900;
+	padding: 42px 40px;
+	display: block;
+	transition: 0.3s;
+}
+
+.roh-new_more-items_more + .roh-new_more-items_more_title:hover,
+.roh-new_more-items_more_title:hover {
+	background: #000000;
+	color: #ffffff;
+}
+
+.roh-new_more-items_more_title span {
+	color: #e02020;
+}
+
+
+.roh-new_more-items_top_shoes {
+	padding-top: 22px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_shoes.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 22%;
+	min-width: 297px;
+	border-radius: 0 10px 0 0;
+	position: relative;
+}
+
+.roh-new_more-items_bottom {
+    display: flex;
+}
+
+.roh-new_more-items_pants {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_pants.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 28px 0 20px 0;
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width: 215px;
+	border-radius: 0 0 0 10px;
+	position: relative;
+}
+
+.roh-new_more-items_pants_title {
+	margin-bottom: 33px;
+}
+
+.roh-new_more-items_acces {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_acces.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 28px 0 20px 0;
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	border-radius: 0 0 10px 0;
+	background-position: -31px 0px;
+	position: relative;
+}
+
+.roh-new_more-items_shirt_title,
+.roh-new_more-items_top_shoes_title,
+.roh-new_more-items_acces_title,
+.roh-new_more-items_pants_title {
+	font-size: 40px;
+	font-weight: 900;
+	color: #ffffff;
+	padding-left: 20px;
+}
+
+.roh-new_more-items_shirt_suptitle,
+.roh-new_more-items_top_shoes_suptitle,
+.roh-new_more-items_acces_suptitle,
+.roh-new_more-items_pants_suptitle {
+	font-size: 12px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+
+.roh-new_more-items_shirt_title span,
+.roh-new_more-items_top_shoes_title span,
+.roh-new_more-items_acces_title span,
+.roh-new_more-items_pants_title span {
+	color: #e02020;
+}
+
+
+/*arrow*/
+
+.roh-new_more-items_man-btn,
+.roh-new_more-items_woman-btn {
+	padding: 0 20px;
+	margin: 10px 0 0 0;
+}
+
+.roh-new_more-items_man-btn a,
+.roh-new_more-items_woman-btn a {
+	position: relative;
+	align-items: center;
+	display: inline-block;
+	cursor: pointer;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.roh-new_more-items_man-btn a:hover,
+.roh-new_more-items_woman-btn a:hover {
+	opacity: 0.5;
+}
+
+.roh-new_more-items_arrow {
+	position: absolute;
+	left: 93px;
+	top: 7px;
+}
+
+.roh-new_more-items_acces .roh-new_more-items_arrow {
+	left: 64px;
+}
+
+.roh-new_more-items_arrow-lr {
+	cursor: pointer;
+	position: relative;
+	width: 15px;
+	height: 2px;
+	margin: 0px;
+	background: #ffffff;
+}
+
+.roh-new_more-items_arrow-lr::after {
+	content: '';
+	position: absolute;
+	transform: rotate(36deg);
+	width: 8px;
+	height: 2px;
+	background: #ffffff;
+	right: 0;
+	top: -2px;
+}
+
+.roh-new_more-items_arrow-lr::before {
+	content: '';
+	position: absolute;
+	transform: rotate(-36deg);
+	width: 8px;
+	height: 2px;
+	background: #ffffff;
+	right: 0;
+	top: 2px;
+}
+
+/*seventh block*/
+
+.roh-new_condition {
+	color: #777777;
+	font-size: 14px;
+	margin-top: 50px;
+	padding-bottom: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 750px){
+
+	/*общее*/
+	.roh-news_container-block {
+   		padding: 25px 15px;
+	}
+
+	.roh-new_intro,
+	.roh-new_emotion,
+	.roh-new_bonus,
+	.roh-new_man-set,
+	.roh-new_woman-set,
+	.roh-new_more-items,
+	.roh-new_condition {
+		border-radius: 22px;
+	}
+
+	.roh-news_container {
+		max-width: 990px;
+	}
+
+	/*first block*/
+	.roh-new_intro {
+		background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_m_headerr.jpg);
+		background-size: cover;
+		padding-bottom: 20px;
+	}
+
+	.roh-new_intro_top {
+		text-align: center;
+		font-weight: 900;
+		margin-bottom: 373px;
+	}
+
+	.roh-new_intro_dac {
+		overflow-x: scroll;
+		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
+	}
+
+	.roh-new_intro_dac_item {
+		min-width: 192px;
+		margin: 0 15px;
+	}
+
+	/*second block*/
+
+	.roh-new_emotion {
+		padding-bottom: 0;
+		background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_m_emotion.jpg);
+		background-size: contain;
+		background-color: #ffffff;
+	}
+
+	.roh-new_emotion_content {
+		max-width: 100%;
+	}
+
+	.roh-new_emotion_title {
+		margin-top: 500px;
+	}
+
+	.roh-new_emotion_description {
+		font-size: 20px;
+	}
+
+	.roh-new_emotion_description br {
+		margin-bottom: 17px;
+	}
+
+	.roh-new_emotion_link {
+		display: block;
+	}
+
+
+
+	/*third block */
+
+	.roh-new_bonus {
+		padding-bottom: 0px;
+	}
+
+	.roh-new_bonus_step-text {
+		font-size: 20px;
+	}
+
+	.roh-new_bonus_step-text-three span {
+		font-size: 17px;
+	}
+
+	.roh-new_bonus_card_register {
+		margin-top: 43px;
+		display: flex;
+		flex-direction: column;
+    }
+
+    .roh-new_bonus_card_login {
+		font-size: 20px;
+	}
+
+
+	/*fourth block*/
+	/*fifth block*/
+
+	.roh-new_woman-set {
+		display: flex;
+		flex-direction: column-reverse;
+		background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_m_woman.jpg);
+		padding: 0 0 0 15px;
+	}
+	
+	.roh-new_man-set {
+		background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_mm_man.jpg);
+		padding: 0 0 0 15px;
+	}
+
+	.roh-new_man-set_title,
+	.roh-new_woman-set_title {
+		font-size: 40px;
+	}
+
+	.roh-new_woman-set_title {
+		justify-content: start;
+	}
+
+
+	.roh-new_man-set_product_content,
+	.roh-new_woman-set_product_content {
+	    margin-bottom: 26px;
+		max-width: 100%;
+		overflow-x: scroll;
+		white-space: nowrap;
+		-webkit-overflow-scrolling: touch;
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	.roh-new_man-set_product_item_title,
+	.roh-new_man-set_product_item_brand,
+	.roh-new_woman-set_product_item_title,
+	.roh-new_woman-set_product_item_brand {
+		font-size: 22px;
+	}
+
+	.roh-new_man-set_product_item_not-price,
+	.roh-new_woman-set_product_item_not-price {
+		font-size: 26px;
+	}
+
+	.roh-new_man-set_product_item_discount,
+	.roh-new_woman-set_product_item_discount {
+		width: 81%;
+	}
+
+	.roh-new_man-set_product_item_discount_price,
+	.roh-new_woman-set_product_item_discount_price {
+		font-size: 18px;
+	}
+
+	.roh-new_man-set_product_item_discount_perc,
+	.roh-new_woman-set_product_item_discount_perc {
+		font-size: 15px;
+	}
+
+	.roh-new_man-set_product_links,
+	.roh-new_woman-set_product_links {
+		display: flex;
+		flex-direction: column;
+		padding: 0 20px 25px 5px;
+	}
+
+	.roh-new_man-set_product_link-show,
+	.roh-new_woman-set_product_link-show {
+		background: #ffffff;
+		color: #000000;
+	}
+
+	.roh-new_man-set_product_link-show:hover,
+	.roh-new_woman-set_product_link-show:hover {
+		background: #ffd9d9;
+		border: 2px solid #ffd9d9;
+		color: #000000;
+	}
+
+	/*sixth block */
+	.roh-new_more-items_top,
+	.roh-new_more-items_bottom {
+ 	   flex-direction: column;
+	}
+
+	.roh-new_more-items_top_left {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.roh-new_more-items_more {
+		border-radius: 10px 10px 0 0;
+	}
+
+	.roh-new_more-items_more_title {
+		font-size: 49px;
+		border-radius: 10px 10px 0 0;
+		padding: 42px 20px;
+	}
+
+	.roh-new_more-items_shirt,
+	.roh-new_more-items_top_shoes,
+	.roh-new_more-items_pants {
+		border-radius: 0;
+	}
+
+	.roh-new_more-items_shirt {
+		background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_m_shirts.jpg);
+	}
+
+	.roh-new_more-items_shirt_title {
+		margin-bottom: 321px;
+		font-size: 53px;
+		margin-top: 17px;
+	}
+
+	.roh-new_more-items_woman-btn-hover,
+	.roh-new_more-items_man-btn-hover {
+		display: none;
+	}
+
+	.roh-new_more-items_top_shoes {
+		background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_m_shoes.png);
+		background-color: #124594;
+	}
+
+	.roh-new_more-items_top_shoes_title {
+		padding-bottom: 354px;
+		font-size: 53px;
+		margin-top: 17px;
+	}
+
+	.roh-new_more-items_pants {
+		background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_m_pants.jpg);
+	}
+
+	.roh-new_more-items_pants_title {
+		margin-bottom: 298px;
+		font-size: 53px;
+		margin-top: 17px;
+	}
+
+	.roh-new_more-items_acces {
+		background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_m_access.jpg);
+		border-radius: 0 0 10px 10px;
+		background-position: 0;
+	}
+
+	.roh-new_more-items_acces_title {
+		margin-bottom: 518px;
+		font-size: 53px;
+		margin-top: 17px;
+	}
+
+	.roh-new_more-items_shirt_suptitle,
+	.roh-new_more-items_top_shoes_suptitle,
+	.roh-new_more-items_acces_suptitle,
+	.roh-new_more-items_pants_suptitle {
+		font-size: 18px;
+		margin-top: 2px;
+	}
+
+	.roh-new_more-items_man-btn a,
+	.roh-new_more-items_woman-btn a {
+		margin: 5px 0;
+	}
+
+	.roh-new_more-items_man-btn a,
+	.roh-new_more-items_woman-btn a {
+		background: #ffffff;
+		color: #000000;
+		margin: 10px 0;
+		padding: 10px 0;
+		font-size: 19px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		border-radius: 3px;
+	}
+
+	.roh-new_more-items_man-btn a:hover,
+	.roh-new_more-items_woman-btn a:hover {
+		background: #ffd9d9;
+		opacity: 1;
+	}
+
+	.roh-new_more-items_arrow {
+		display: none;
+	}
+
+
+	/*общее*/
+	.roh-new_bonus_step,
+	.roh-new_bonus_card_content,
+	.roh-new_bonus_card_content-text,
+	.roh-new_man-set_product,
+	.roh-new_woman-set_product, 
+	.roh-new_man-set_title,
+	.roh-new_woman-set_title,
+	.roh-new_more-items_top_left,
+	.roh-new_more-items_top_shoes,
+	.roh-new_more-items_pants,
+	.roh-new_more-items_acces {
+		width: 100%;
+	}
+
+	.roh-new_emotion_link,
+    .roh-new_bonus_card_register-btn,
+    .roh-new_bonus_card_detailed-btn,
+	.roh-new_man-set_product_link-show,
+	.roh-new_woman-set_product_link-show,
+	.roh-new_man-set_product_link-buy,
+	.roh-new_woman-set_product_link-buy {
+		margin: 10px 0;
+		padding: 10px 0;
+		font-size: 19px;
+		text-align: center;
+	}
+
+	 /*seventh block */
+	.roh-new_condition {
+		color: #777777;
+		font-size: 20px;
+		margin-top: 50px;
+		padding-bottom: 35px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.roh-new_more-items_links {
+		opacity: 1;
+	}
+}
+
+@media (max-width: 530px){
+
+
+	/*общее*/
+	.roh-news_title,
+	.roh-new_more-items_more_title {
+		font-size: 40px;
+		font-weight: 900;
+	}
+
+	/*first block*/
+
+	.roh-new_intro {
+		background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_m_headerr.jpg);
+		background-size: cover;
+		padding-bottom: 20px;
+	}
+
+	.roh-new_intro_top {
+		text-align: center;
+		font-weight: 900;
+		margin-bottom: 210px;
+	}
+
+	.roh-new_intro_title {
+		font-size: 44px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+	}
+
+	.roh-new_intro_title::before {
+		content: '';
+		width: 90%;
+		height: 5px;
+		background: #ec1c24;
+		position: absolute;
+		bottom: -10px;
+	}
+
+	.roh-new_intro_suptitle {
+		font-size: 29px;
+		margin-top: 17px;
+	}
+
+	.roh-new_intro_suptitle span {
+		font-size: 16px;
+	}
+
+	/*second block */
+
+	.roh-new_emotion_title {
+		width: 280px;
+		margin-top: 355px;
+	}
+
+
+	/*fourth block */
+
+	.roh-new_man-set_product_content,
+	.roh-new_woman-set_product_content {
+		/*min-width: 300px;*/
+	}
+
+	.roh-new_man-set_title,
+	.roh-new_woman-set_title {
+		margin-top: 225px;
+	}
+
+	/*third block */
+	.roh-new_bonus_title {
+		width: 322px;
+	}
+
+
+
+	/*sixth block */
+
+	.roh-new_more-items_acces_title {
+		margin-bottom: 281px;
+	}
+
+	.roh-new_more-items_pants_title {
+		margin-bottom: 174px;
+	}
+
+	.roh-new_more-items_top_shoes_title {
+		padding-bottom: 255px;
+	}
+
+	.roh-new_more-items_shirt_title {
+		margin-bottom: 245px;
+	}
+
+}
+
+@media (max-width: 480px){
+
+}
+
+@media (max-width: 430px){
+	/*first block*/
+	.roh-new_intro_top {
+		margin-bottom: 48px;
+	}
+
+	.roh-new_intro_dac_item {
+		min-width: 142px;
+		height: 55px;
+		margin: 0 12px;
+	}
+
+	.roh-new_intro_dac_item_date {
+		font-size: 15px;
+	}
+
+	.roh-new_intro_dac_item_city {
+		font-size: 14px;
+	}
+
+
+	/*second block */
+	.roh-new_emotion_title {
+		margin-top: 233px;
+	}
+
+	.roh-new_emotion_description {
+		font-size: 13px;
+	}
+
+	.roh-new_emotion_description br {
+		margin-bottom: 17px;
+	}
+
+	/*third block */
+	.roh-new_bonus_title {
+		width: 100%;
+	}
+
+	.roh-new_bonus_card_content {
+		min-width: 100%;
+	}
+
+	.roh-new_bonus_card_login {
+		font-size: 14px;
+	}
+
+	.roh-new_bonus_step-text {
+		font-size: 13px;
+	}
+
+	.roh-new_bonus_step-text-three span {
+		font-size: 12px;
+	}
+
+	.roh-new_bonus_card {
+		margin-top: 12px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.roh-new_bonus_card::before {
+		background-size: contain;
+		height: 256px;
+		min-width: 257px;
+	}
+
+
+	 /*fifth block */
+
+
+
+
+	.roh-new_man-set_product_content,
+	.roh-new_woman-set_product_content {
+		/*min-width: 297px;*/
+	}
+
+
+	.roh-new_man-set_product_item_title,
+	.roh-new_man-set_product_item_brand,
+	.roh-new_woman-set_product_item_title,
+	.roh-new_woman-set_product_item_brand {
+		font-size: 17px;
+	}
+
+	.roh-new_man-set_title,
+	.roh-new_woman-set_title {
+		margin-top: 113px;
+	}
+
+	.roh-new_man-set_product_item_not-price,
+	.roh-new_woman-set_product_item_not-price {
+		font-size: 20px;
+	}
+
+	.roh-new_bonus_card_register a,
+	.roh-new_man-set_product a,
+	.roh-new_woman-set_product a {
+		margin: 5px 0;
+	}
+
+	.roh-new_man-set_product_item_discount_price,
+	.roh-new_woman-set_product_item_discount_price {
+		font-size: 14px;
+	}
+
+	.roh-new_man-set_product_item_discount_perc,
+	.roh-new_woman-set_product_item_discount_perc {
+		font-size: 10px;
+		margin-right: 38px;
+	}
+
+
+	/*sixth block */
+	.roh-new_more-items_acces {
+		background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_m_access.jpg);
+		border-radius: 0 0 10px 10px;
+		background-size: cover;
+	}
+
+	.roh-new_man-set_title,
+	.roh-new_woman-set_title,
+	.roh-news_title,
+	.roh-new_more-items_more_title {
+		font-size: 34px;
+	}
+
+	.roh-new_more-items_shirt_title {
+		margin-bottom: 145px;
+	}
+
+	.roh-new_more-items_top_shoes_title {
+		padding-bottom: 180px;
+	}
+
+	.roh-new_more-items_pants_title {
+		margin-bottom: 93px;
+	}
+
+	.roh-new_more-items_acces_title {
+		margin-bottom: 220px;
+	}
+
+	.roh-new_more-items_shirt_title,
+	.roh-new_more-items_top_shoes_title,
+	.roh-new_more-items_acces_title,
+	.roh-new_more-items_pants_title {
+		font-size: 36px;
+	}
+
+	.roh-new_more-items_shirt_suptitle,
+	.roh-new_more-items_top_shoes_suptitle,
+	.roh-new_more-items_acces_suptitle,
+	.roh-new_more-items_pants_suptitle {
+		font-size: 12px;
+	}
+
+	.roh-new_emotion_link,
+	.roh-new_bonus_card_register-btn,
+	.roh-new_bonus_card_detailed-btn,
+	.roh-new_man-set_product_link-show,
+	.roh-new_woman-set_product_link-show,
+	.roh-new_man-set_product_link-buy,
+	.roh-new_woman-set_product_link-buy,
+	.roh-new_more-items_man-btn a,
+	.roh-new_more-items_woman-btn a {
+		margin: 0;
+		padding: 5px 0;
+		font-size: 14px;
+	}
+
+	.roh-new_condition {
+		color: #777777;
+		font-size: 14px;
+		margin-top: 50px;
+		padding-bottom: 35px;
+	}
+
+}
+
+</style>
+
+
+<div class="roh-news_background">
+	<section class="roh-news_container">
+
+		<!-- first block -->
+		<div class="roh-new_intro">
+			<div class="roh-new_intro_top roh-news_uppercase">
+				<!-- <div class="roh-new_intro_title">
+					Гонка героев
+				</div>
+				<div class="roh-new_intro_suptitle">
+					Вернем 100% стартовых взносов 
+					<span>Бонусами на карту спортмастер*</span>
+				</div> -->
+			</div>
+			<ul class="roh-new_intro_dac roh-news_space-between roh-news_ul-none">
+				<li class="roh-new_intro_dac_item roh-news_li-none">
+					<div class="roh-new_intro_dac_item_date">
+						11 июля
+					</div>
+					<div class="roh-new_intro_dac_item_city roh-new_paragraph">
+						<div>
+							<span class="roh-news_span-red">М</span>осква
+						</div>
+						<div>
+							<span class="roh-news_span-red">А</span>лабино
+						</div>
+					</div>
+				</li>
+				<li class="roh-new_intro_dac_item roh-news_li-none">
+					<div class="roh-new_intro_dac_item_date">
+						8 августа
+					</div>
+					<div class="roh-new_intro_dac_item_city roh-new_paragraph">
+						<div>
+							<span class="roh-news_span-red">К</span>азань
+						</div>
+					</div>
+				</li>
+				<li class="roh-new_intro_dac_item roh-news_li-none">
+					<div class="roh-new_intro_dac_item_date">
+						15 августа
+					</div>
+					<div class="roh-new_intro_dac_item_city roh-new_paragraph">
+						<div>
+							<span class="roh-news_span-red">Н</span>овосибирск
+						</div>
+						<div>
+							<span class="roh-news_span-red">С</span>анкт-Петербург
+						</div>
+					</div>
+				</li>
+				<li class="roh-new_intro_dac_item roh-news_li-none">
+					<div class="roh-new_intro_dac_item_date">
+						22 августа
+					</div>
+					<div class="roh-new_intro_dac_item_city roh-new_paragraph">
+						<div>
+							<span class="roh-news_span-red">В</span>ладивосток
+						</div>
+					</div>
+				</li>
+				<li class="roh-new_intro_dac_item roh-news_li-none">
+					<div class="roh-new_intro_dac_item_date">
+						29 августа
+					</div>
+					<div class="roh-new_intro_dac_item_city roh-new_paragraph">
+						<div>
+							<span class="roh-news_span-red">Е</span>катеринбург
+						</div>
+					</div>
+				</li>
+				<li class="roh-new_intro_dac_item roh-news_li-none">
+					<div class="roh-new_intro_dac_item_date">
+						5 сентября
+					</div>
+					<div class="roh-new_intro_dac_item_city roh-new_paragraph">
+						<div>
+							<span class="roh-news_span-red">Т</span>ула
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+
+		<!-- second block -->
+		<div class="roh-new_emotion">
+			<div class="roh-news_container-block">
+				<div class="roh-new_emotion_content">
+					<div class="roh-new_emotion_title roh-news_title roh-news_uppercase">
+						<span class="roh-news_span-red">Н</span>астоящие эмоции
+					</div>
+					<div class="roh-new_emotion_description roh-new_paragraph">
+						Крутые забеги с препятствиям, основанные на испытаниях для подготовки бойцов спецподразделения. 10 км трассы и свыше 30 препятствий: рукоходы, переправы и рвы, колючая проволока и отвесные стены. <br>
+						Это приключение, доступное каждому - гонка продумана так, чтобы интересно было всем: от офисных сотрудников до профессиональных атлетов. А главное - в гонке нет проигравших. Участие уже победа! <br>
+						Помнишь, как в детстве с друзьями вы катались на тарзанке и забирались на деревья? Гонка Героев предложит тебе еще больше приключений. Ежедневная рутина никогда не даст эмоций, от которых захватывает дух, - их подарит Гонка.
+					</div>
+					<a href="https://heroleague.ru/events/ggmsc11072020/" target="_blank" class="roh-new_emotion_link roh-news_uppercase">
+						Принять участие
+					</a>
+				</div>
+			</div>
+		</div>
+		
+
+		<!-- third block -->
+		<div class="roh-new_bonus">
+			<div class="roh-news_container-block">
+				<div class="roh-new_bonus_title roh-news_title roh-news_uppercase">
+					<span class="roh-news_span-red">К</span>ак получить бонусы?
+				</div>
+				<ul class="roh-new_bonus_steps roh-news_space-between roh-news_ul-none">
+					<li class="roh-new_bonus_step roh-news_li-none">
+						<div class="roh-new_bonus_step-number">
+							1
+						</div>
+						<div class="roh-new_bonus_step-text roh-new_paragraph">
+							Выбери подходящий формат забега на сайте <a href="https://heroleague.ru/race/" target="_blank">heroleague.ru</a> и <a href="https://heroleague.ru/race/#take_part" target="_blank">зарегистрируйся</a>
+						</div>
+					</li>
+					<li class="roh-new_bonus_step roh-news_li-none">
+						<div class="roh-new_bonus_step-number">
+							2
+						</div>
+						<div class="roh-new_bonus_step-text roh-new_paragraph">
+							Укажи при регистрации свой телефон, привязанный 
+							к клубной карте Спортмастер
+						</div>
+					</li>
+					<li class="roh-new_bonus_step roh-news_li-none">
+						<div class="roh-new_bonus_step-number">
+							3
+						</div>
+						<div class="roh-new_bonus_step-text roh-new_bonus_step-text-three roh-new_paragraph">
+							Получи полную стоимость стартового взноса баллами 
+							на карту "Спортмастер" <br>
+							1 бонус = 1 рубль <br>
+							<span>период действия баллов 1 месяц</span>
+						</div>
+					</li>
+				</ul>
+				<div class="roh-new_bonus_card">
+					<div class="roh-new_bonus_card_content">
+						<div class="roh-new_bonus_card_content-text">
+							<div class="roh-new_bonus_card_title">
+								<span>Н</span>ет Клубной карты?
+							</div>
+							<div class="roh-new_bonus_card_suptitle">
+								Оформите ее онлайн!
+							</div>
+							<div class="roh-new_bonus_card_register">					
+								<a href="/user/session/register.do" class="roh-new_bonus_card_register-btn roh-news_uppercase">Зарегистрироваться</a>
+								<a href="/clubpro/" class="roh-new_bonus_card_detailed-btn roh-news_uppercase">Подробнее</a>
+								<div class="roh-new_bonus_card_login">Уже есть карта?
+									<a href="/user/session/login.do" class="roh-new_bonus_card_login-btn">Войти</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- fourth block -->
+		<div class="roh-new_man-set roh-news_container-block roh-news_space-between">
+			<div class="roh-new_man-set_title roh-news_uppercase">Мужской <br> комплект</div>
+			<div class="roh-new_man-set_product">
+				<div class="roh-new_man-set_product_content roh-news_space-between">
+
+					<!-- first item -->
+					<div class="roh-new_man-set_product_item">
+						<div class="roh-new_man-set_product_item_container-img">
+							<div class="roh-new_man-set_product_item_img">
+								<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_man_long.png" alt="фото лонгслива">
+							</div>
+						</div>
+						<div class="roh-new_man-set_product_item_text">
+							<div class="roh-new_man-set_product_item_title">
+								Лонгслив мужской
+							</div>
+							<div class="roh-new_man-set_product_item_brand">
+								Demix
+							</div>
+							<div class="roh-new_man-set_product_item_price">
+								<div class="roh-new_man-set_product_item_not-price roh-news_uppercase">
+									2 499 <span>р</span>
+								</div>
+								<div class="roh-new_man-set_product_item_discount roh-news_space-between">
+									<div class="roh-new_man-set_product_item_discount_price roh-news_uppercase">
+										1 249 <span>р</span>
+									</div>
+									<div class="roh-new_man-set_product_item_discount_perc">
+										-50%
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- second item -->
+					<div class="roh-new_man-set_product_item">
+						<div class="roh-new_man-set_product_item_container-img">
+							<div class="roh-new_man-set_product_item_img">
+								<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_man_leg.png" alt="фото тайтсов мужских">
+							</div>
+						</div>
+						<div class="roh-new_man-set_product_item_text">
+							<div class="roh-new_man-set_product_item_title">
+								Тайтсы мужские
+							</div>
+							<div class="roh-new_man-set_product_item_brand">
+								Demix
+							</div>
+							<div class="roh-new_man-set_product_item_price">
+								<div class="roh-new_man-set_product_item_not-price roh-news_uppercase">
+									1 699 <span>р</span>
+								</div>
+								<div class="roh-new_man-set_product_item_discount roh-news_space-between">
+									<div class="roh-new_man-set_product_item_discount_price roh-news_uppercase">
+										849 <span>р</span>
+									</div>
+									<div class="roh-new_man-set_product_item_discount_perc">
+										-50%
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- third item -->
+					<div class="roh-new_man-set_product_item">
+						<div class="roh-new_man-set_product_item_container-img">
+							<div class="roh-new_man-set_product_item_img">
+								<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_man_shoes.png" alt="фото мужских кроссовок">
+							</div>
+						</div>
+						<div class="roh-new_man-set_product_item_text">
+							<div class="roh-new_man-set_product_item_title">
+								Кроссовки мужские
+							</div>
+							<div class="roh-new_man-set_product_item_brand">
+								Demix Maramine M
+							</div>
+							<div class="roh-new_man-set_product_item_price">
+								<div class="roh-new_man-set_product_item_not-price roh-news_uppercase">
+									2 999 <span>р</span>
+								</div>
+								<div class="roh-new_man-set_product_item_discount roh-news_space-between">
+									<div class="roh-new_man-set_product_item_discount_price roh-news_uppercase">
+										2 099 <span>р</span>
+									</div>
+									<div class="roh-new_man-set_product_item_discount_perc">
+										-30%
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="roh-new_man-set_product_links">
+					<a href="/catalog/begovye_komplekty_/gonka_geroev_/komplekt_dlya_muzhchin_2_/" class="roh-new_man-set_product_link-buy roh-news_uppercase">Купить комплект</a>
+					<a href="/catalog/begovye_komplekty_/gonka_geroev_/" class="roh-new_man-set_product_link-show roh-news_uppercase">Посмотреть все комплекты</a>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- fifth block -->
+		<div class="roh-new_woman-set roh-news_container-block roh-news_space-between">
+			<div class="roh-new_woman-set_product">
+				<div class="roh-new_woman-set_product_content roh-news_space-between">
+
+					<!-- first item -->
+					<div class="roh-new_woman-set_product_item">
+						<div class="roh-new_woman-set_product_item_container-img">
+							<div class="roh-new_woman-set_product_item_img">
+								<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_woman_shirt.png" alt="фото женской футболки">
+							</div>
+						</div>
+						<div class="roh-new_woman-set_product_item_text">
+							<div class="roh-new_woman-set_product_item_title">
+								Футболка женская
+							</div>
+							<div class="roh-new_woman-set_product_item_brand">
+								Demix
+							</div>
+							<div class="roh-new_woman-set_product_item_price">
+								<div class="roh-new_woman-set_product_item_not-price roh-news_uppercase">
+									1 299 <span>р</span>
+								</div>
+								<div class="roh-new_woman-set_product_item_discount roh-news_space-between">
+									<div class="roh-new_woman-set_product_item_discount_price roh-news_uppercase">
+										649 <span>р</span>
+									</div>
+									<div class="roh-new_woman-set_product_item_discount_perc">
+										-50%
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- second item -->
+					<div class="roh-new_woman-set_product_item roh-new_woman-set_product_item-leg">
+						<div class="roh-new_woman-set_product_item_container-img">
+							<div class="roh-new_woman-set_product_item_img">
+								<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_woman_leg.png" alt="фото женских лонгслив">
+							</div>
+						</div>
+						<div class="roh-new_woman-set_product_item_text">
+							<div class="roh-new_woman-set_product_item_title">
+								Легинсы женские
+							</div>
+							<div class="roh-new_woman-set_product_item_brand">
+								Demix
+							</div>
+							<div class="roh-new_woman-set_product_item_price">
+								<div class="roh-new_woman-set_product_item_not-price roh-news_uppercase">
+									2 699 <span>р</span>
+								</div>
+								<!-- <div class="roh-new_woman-set_product_item_discount roh-news_space-between">
+									<div class="roh-new_man-set_product_item_discount_price roh-news_uppercase">
+										849 <span>р</span>
+									</div>
+									<div class="roh-new_woman-set_product_item_discount_perc">
+										-50%
+									</div>
+								</div> -->
+							</div>
+						</div>
+					</div>
+
+					<!-- third item -->
+					<div class="roh-new_woman-set_product_item">
+						<div class="roh-new_woman-set_product_item_container-img">
+							<div class="roh-new_woman-set_product_item_img">
+								<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_woman_shoes.png" alt="фото кроссовок мужских">
+							</div>
+						</div>
+						<div class="roh-new_woman-set_product_item_text">
+							<div class="roh-new_woman-set_product_item_title">
+								Кроссовки женские
+							</div>
+							<div class="roh-new_woman-set_product_item_brand">
+								Demix Maramine M
+							</div>
+							<div class="roh-new_woman-set_product_item_price">
+								<div class="roh-new_woman-set_product_item_not-price roh-news_uppercase">
+									4 499 <span>р</span>
+								</div>
+								<div class="roh-new_woman-set_product_item_discount roh-news_space-between">
+									<div class="roh-new_woman-set_product_item_discount_price roh-news_uppercase">
+										2 699 <span>р</span>
+									</div>
+									<div class="roh-new_woman-set_product_item_discount_perc">
+										-40%
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="roh-new_woman-set_product_links">
+					<a href="/catalog/begovye_komplekty_/gonka_geroev_/komplekt_dlya_zhenshchin_3_/" class="roh-new_woman-set_product_link-buy roh-news_uppercase">Купить комплект</a>
+					<a href="/catalog/begovye_komplekty_/gonka_geroev_/" class="roh-new_woman-set_product_link-show roh-news_uppercase">Посмотреть все комплекты</a>
+				</div>
+			</div>
+			<div class="roh-new_woman-set_title roh-news_uppercase">Женский <br> комплект</div>
+		</div>
+
+
+		<!-- sixth block -->
+		<div class="roh-new_more-items">
+			<div class="roh-new_more-items_top">
+				<div class="roh-new_more-items_top_left">
+					<div class="roh-new_more-items_shirt">
+						<div class="roh-new_more-items_shirt_title roh-news_uppercase"> <span>Ф</span>утболки
+							<div class="roh-new_more-items_shirt_suptitle roh-news_uppercase">1196 товаров</div>
+						</div>
+						<div class="roh-new_more-items_shirt-hover"></div>
+						<div class="roh-new_more-items_links">
+							<div class="roh-new_more-items_man-btn">
+								<a href="/catalog/vidy_sporta_/beg/muzhskaya_odezhda/?f-tp=subgroup_0605c0d9f1,subgroup_a3badee222,subgroup_futbolki_bez_rukavov" class="roh-news_uppercase">Мужчинам
+									<div class="roh-new_more-items_arrow">
+										<div class="roh-new_more-items_arrow-lr"></div>
+									</div>
+								</a>
+								<div class="roh-new_more-items_man-btn-hover">
+									<!-- <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_m_shirts_first.png" alt="фото финишируеющего бегуна"> -->
+								</div>
+							</div>
+							<div class="roh-new_more-items_woman-btn">
+								<a href="/catalog/vidy_sporta_/beg/zhenskaya_odezhda/?f-tp=subgroup_0605c0d9f1,subgroup_a3badee222" class="roh-news_uppercase">Женщинам
+									<div class="roh-new_more-items_arrow">
+										<div class="roh-new_more-items_arrow-lr"></div>
+									</div>
+								</a>
+								<div class="roh-new_more-items_woman-btn-hover">
+									<!-- <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/953614_02_06_2020/roh_m_shirts_second.png" alt="фото девушки на преодолевающей препятствие"> -->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="roh-new_more-items_more">
+						<a class="roh-new_more-items_more_title roh-news_uppercase" href="/catalog/vse_dlya_bega_/"> <span>Е</span>ще больше товаров для бега</a>
+					</div>
+				</div>
+				<div class="roh-new_more-items_top_shoes">
+					<div class="roh-new_more-items_top_shoes_title roh-news_uppercase">
+						<span>К</span>россовки
+						<div class="roh-new_more-items_top_shoes_suptitle roh-news_uppercase">388 товаров</div>
+					</div>
+					<div class="roh-new_more-items_shirt-hover"></div>
+					<div class="roh-new_more-items_links">
+						<div class="roh-new_more-items_man-btn">
+							<a href="/catalog/vidy_sporta_/beg/muzhskaya_obuv/" class="roh-news_uppercase">Мужчинам
+								<div class="roh-new_more-items_arrow">
+									<div class="roh-new_more-items_arrow-lr"></div>
+								</div>
+							</a>
+						</div>
+						<div class="roh-new_more-items_woman-btn">
+							<a href="/catalog/vidy_sporta_/beg/zhenskaya_obuv/" class="roh-news_uppercase">Женщинам
+								<div class="roh-new_more-items_arrow">
+									<div class="roh-new_more-items_arrow-lr"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="roh-new_more-items_bottom">
+				<div class="roh-new_more-items_pants">
+					<div class="roh-new_more-items_pants_title roh-news_uppercase"> <span>Б</span>рюки <br> и легинсы
+						<div class="roh-new_more-items_pants_suptitle roh-news_uppercase">881 товар</div>
+					</div>
+					<div class="roh-new_more-items_shirt-hover"></div>
+					<div class="roh-new_more-items_links">
+						<div class="roh-new_more-items_man-btn">
+							<a href="/catalog/vidy_sporta_/beg/muzhskaya_odezhda/?f-tp=subgroup_bryuki,subgroup_bryuki_trikotazhnye" class="roh-news_uppercase">Мужчинам
+								<div class="roh-new_more-items_arrow">
+									<div class="roh-new_more-items_arrow-lr"></div>
+								</div>
+							</a>
+						</div>
+						<div class="roh-new_more-items_woman-btn">
+							<a href="/catalog/vidy_sporta_/beg/zhenskaya_odezhda/?f-tp=subgroup_leginsy" class="roh-news_uppercase">Женщинам
+								<div class="roh-new_more-items_arrow">
+									<div class="roh-new_more-items_arrow-lr"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="roh-new_more-items_acces">
+					<div class="roh-new_more-items_acces_title roh-news_uppercase"> 
+						<span>А</span>ксессуары
+						<div class="roh-new_more-items_acces_suptitle roh-news_uppercase">
+							82 товара
+						</div>
+					</div>
+					<div class="roh-new_more-items_shirt-hover"></div>
+					<div class="roh-new_more-items_links">
+						<div class="roh-new_more-items_man-btn">
+							<a href="/catalog/vidy_sporta_/beg/aksessuary/" class="roh-news_uppercase">купить
+								<div class="roh-new_more-items_arrow">
+									<div class="roh-new_more-items_arrow-lr"></div>
+								</div>
+							</a>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+
+		<!-- seventh block -->
+		<div class="roh-new_condition">
+			Бонусы зачисляются на счет в течение 8 дней после регистрации* и оплаты стартового взноса за участие в мероприятии и действительны в течение 30 дней с момента начисления. Оплачивайте бонусами до 30% стоимости любых товаров, кроме подарочных карт, товаров «Лучшая цена» и товаров с отметкой «Не применяются бонусы и скидки». Бонусы можно использовать в магазинах Спортмастер, на сайте www.sportmaster.ru и в мобильном приложении. В магазинах Спортмастер Дисконт тратить бонусы нельзя. <br>
+			• При регистрации на соревнование необходимо указать номер телефона привязанный к клубной карте Спортмастер.
+		</div>
+
+
+
+	</section>
+</div>
