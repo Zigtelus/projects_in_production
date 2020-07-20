@@ -1,0 +1,898 @@
+<link rel="stylesheet" href="/sportmaster.ru/css/proximanova.css">
+
+<style>
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.ttf?v=1.0') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.eot?v=1.0#iefix') format('embedded-opentype'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.woff?v=1.0') format('woff'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.ttf?v=1.0') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.ttf?v=1.0') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.eot?v=1.0#iefix') format('embedded-opentype'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.woff?v=1.0') format('woff'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.ttf?v=1.0') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.ttf?v=1.0') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.sm-news__common h1{
+	position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.sm-news__date {
+	position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+   
+.ar-news_container {
+	width: 100%;
+	max-width: 990px;
+	font-family: 'Proxima Nova';
+	color: #000;
+    position: relative;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+
+.ar-news_container img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.ar-s {
+	background-color: #eff3f4;
+}
+
+.ar-news_ur-text {
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+.ar-news-s {
+	display: none;
+}
+
+.ar-news_top-img_wrap {
+	margin-bottom: 55px;
+}
+
+
+.ar-news_block-1 {
+	font-weight: 700;
+	font-size: 26px;
+	margin-bottom: 55px;
+}
+
+.ar-news_block-2 {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-bottom: 60px;
+}
+
+.ar-news_block-2_t {
+	width: 45%;
+}
+
+.ar-news_block-2_img {
+	width: 53%;
+}
+
+.ar-news_block-2_t_1 {
+	margin-bottom: 0px;
+}
+
+.ar-news_block-2_t_1_1 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.ar-news_block-2_t_1_1 p:first-child {
+	margin-top: 0px;
+}
+
+.ar-news_block-2_t_1_ul {
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+	margin-left: 17px;
+}
+
+.ar-news_block-2_t_1_ul li {
+	padding-bottom: 10px;
+}
+
+.ar-news_block-2_t_2 {
+	width: 100%;
+	margin-top: 35px;
+	margin-bottom: 25px;
+}
+
+.ar-news_block-2_t_2_1 {
+	font-weight: 700;
+	font-size: 20px;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+
+.ar-news_block-2_t_2_2 {
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 5px;
+	color: #005aab;
+}
+
+.ar-news_block-3 {
+	margin-bottom: 65px;
+}
+
+.ar-news_block-3_1 {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+.ar-news_block-3_1 span {
+	color: #ed1c24;
+	font-weight: 900;
+}
+
+.ar-news_block-3_2 {
+	width: 80%;
+	font-size: 12px;
+}
+
+.ar-news_block-3_step {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 47px;
+	margin-left: 0;
+	margin-bottom: 50px;
+	padding-left: 0;
+}
+
+.ar-news_block-3_step-one {
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 0;
+}
+
+.ar-news_block-3_step-one a {
+	text-transform: uppercase;
+	font-weight: 600;
+}
+
+.ar-news_block-3_step-two{
+	list-style-type: none;
+	display: flex;
+	justify-content: start;
+	margin: 10px 0;
+}
+.ar-news_block-3_step-three {
+	list-style-type: none;
+	display: flex;
+	justify-content: start;
+	margin: 10px 0;
+}
+
+.ar-news_block-3_step-number {
+    font-size: 50px;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.ar-news_block-3_step-one b {
+	margin-right: 23px;
+}
+
+.ar-news_block-3_step-one p {
+	margin: 8px 0 0 0;
+	font-size: 16px;
+	width: 130px;
+}
+
+.ar-news_block-3_step-two p {
+    margin: 8px 0 0 0;
+    font-size: 16px;
+	width: 215px;
+}
+
+.ar-news_block-3_step-three p {
+    margin: 8px 0 0 0;
+    font-size: 16px;
+	width: 220px;
+}
+
+.ar-news_block-3_step-three span {
+	font-size: 20px;
+    font-weight: 900;
+    color: #ed1c24;
+}
+
+.ar-news_block-3_reg {
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+}
+
+.ar-news_block-3_reg_btn {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 42px;
+	width: 340px;
+	border-radius: 4px;
+	background-color: #ed1c24;
+	transition: 0.2s;
+	text-decoration: none;
+	margin-bottom: 15px;
+	border: 1px solid #e91b24;
+}
+
+.ar-news_block-3_reg_btn:hover {
+    background-color: #df0219c7;
+    color: #ffff;
+}
+
+.ar-news_block-3_reg_t {
+	font-size: 12px;
+}
+
+.ar-news_block-4_card {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    margin-bottom: 50px;
+    margin-top: 23px;
+    background-image: url("https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/background_card.png");
+	background-size: cover;
+	justify-content: center;
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.ar-news_block-4_card_content {
+	margin: 0 20px;
+}
+
+.ar-news_block-4_card::before {
+	content: '';
+	background: url("https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/cards.png");
+	width: 321px;
+	height: 237px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.ar-news_block-4_card_title {
+	margin: 0;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.ar-news_block-4_card_register {
+    margin-top: 58px;
+	font-weight: 500;
+}
+
+.ar-news_block-4_card_register-btn {
+	padding: 13px 20px;
+	background: #054793;
+	color: #ffff;
+	text-decoration: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+	margin-right: 5px;
+	border: 1px solid #054793;
+	transition: 0.2s;
+	text-align: center;
+	font-weight: 600;
+	display: inline-table;
+}
+
+.ar-news_block-4_card_register-btn:hover {
+	color: #ffff;
+	background: #05479394;
+}
+
+.ar-news_block-4_card_detailed-btn {
+	padding: 15px 20px;
+	text-decoration: none;
+	font-weight: 600;
+	color: #000;
+	text-transform: uppercase;
+	border-radius: 5px;
+	border: 1px solid #c0c0c0;
+	margin-left: 5px;
+	transition: 0.2s;
+	text-align: center;
+	display: inline-table;
+}
+
+.ar-news_block-4_card_detailed-btn:hover {
+	color: #000;
+	background: #ffffffa8;
+}
+
+.ar-news_block-4_card_login {
+	margin-top: 27px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.ar-news_block-4_card_login-btn {
+	color: #000;
+	transition: 0.2s;
+}
+
+.ar-news_block-4_card_login-btn:hover {
+	color: #054793;
+}
+
+.ar-news_block-4 {
+	background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/blue.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 77px;
+	color: #fff;
+	box-sizing: border-box;
+	font-size: 20px;
+	padding-left: 20px;
+	text-transform: uppercase;
+	display: flex;
+	align-items: center;
+	margin-bottom: 65px;
+}
+
+.ar-news_block-5 {
+	text-align: center;
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+.ar-news_block-6 {
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.ar-news_block-6 a {
+	display: block;
+}
+
+
+
+
+.ar-news_block-6_logo {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+
+.ar-news_block-h {
+	font-size: 40px;
+	font-weight: 600;
+	color: #005aab;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+
+
+.ar-news_block-7 {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+
+.ar-news_block-7_side {
+	width: 310px;
+}
+
+.ar-news_block-7_center {
+	width: 330px;
+	margin: 0 20px;
+}
+
+.ar-news_block-7_side_item {
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	margin-bottom: 3.4%;
+}
+
+.ar-news_block-7_side_item_btn {
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	left: 0;
+	text-align: center;
+}
+
+.ar-news_block-7_side_item_btn div {
+	display: inline-block;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 25px;
+	width: 70%;
+	border-radius: 4px;
+	background-color: #00adef;
+	transition: 0.2s;
+	font-size: 14px;
+}
+
+
+.ar-news_block-7_side_item:hover .ar-news_block-7_side_item_btn div {
+	background-color: #df0219;
+}
+
+
+.ar-news_block-8 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 80px;
+}
+
+.ar-news_block-8_item {
+	margin: 0 10px;
+}
+
+
+
+.ar-s, .ar-6-s, .ar-1-s {
+	display: none;
+}
+
+
+
+@media (max-width: 600px){
+	.ar-news_block-2_t, .ar-news_block-2_img  {
+		width: 100%;
+	}
+	
+	.ar-news_block-2_t {
+		order: 1;
+	}
+	
+	.ar-news_block-2_t_2 {
+		order: 2;
+	}
+	
+	.ar-news_block-2_reg {
+		order: 3;
+		margin-bottom: 25px;
+	}
+	
+	.ar-news_block-2_img {
+		order: 4;
+	}
+	
+	.ar-news_top-img_wrap, .ar-news_block-1, .ar-news_block-2, .ar-news_block-3, .ar-news_block-4, .ar-news_block-6, .ar-news_block-7 {
+		margin-bottom: 35px;
+	}
+
+	.ar-news_block-3_step-one br {
+		display: none;
+	}
+
+	.ar-news_block-3_step-one p, .ar-news_block-3_step-two p, .ar-news_block-3_step-three p {
+		width: 90%;
+	}
+
+	.ar-news_block-4_card {
+		width: 100%;
+		background-image: "https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/background_card_m.png");
+		background-size: cover;
+	}
+
+	.ar-news_block-4_card_content {
+		width: 100%;
+	}
+
+	.ar-news_block-4_card_title {
+		font-size: 26px;
+	}
+
+	.ar-news_block-4_card_register {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.ar-news_block-4_card_register-btn {
+		margin: 0 0 15px 0;
+	}
+
+	.ar-news_block-4_card_detailed-btn {
+		margin: 15px 0 0 0;
+	}
+	
+	.ar-news_block-4 {
+		height: 50px;
+	}
+	
+	.ar-news_block-5 br {
+		display: none;
+	}
+
+	.ar-news_block-h {
+		font-size: 30px;
+	}
+	
+	.ar-news_block-7_center {
+		display: none;
+	}
+	
+	.ar-news_block-7_side {
+		width: 49%;
+	}
+	
+	.ar-news_block-8 {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	
+	.ar-news_block-8_item {
+		width: 27%;
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 530px){
+
+	.ar-news_block-3_step {
+		padding-right: 30px;
+	}
+
+	.ar-news_block-4 {
+		background-image: url("https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/blue_2.png");
+		height: auto;
+		font-size: 16px;
+		line-height: 23px;
+		background-size: 100%;
+
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-right: 35px;
+	}
+
+	.ar-6-m {
+		display: none;
+	}
+	
+	.ar-6-s {
+		display: inline-block;
+	}
+	
+	.ar-news_block-6 a {
+		text-align: center;
+	}
+	
+	.ar-6-s--1 {
+		margin-bottom: 25px;
+	}
+}
+
+@media (max-width: 480px){
+	.ar-1-m {
+		display: none;
+	}
+	
+	.ar-1-s {
+		display: inline-block;
+	}
+	
+	.ar-news_block-1 {
+		font-size: 22px;
+	}
+	
+	.ar-news_block-2_reg_btn {
+		width: 100%;
+	}
+
+	.ar-news_block-8 {
+		margin-bottom: 35px;
+	}
+}
+
+@media (max-width: 430px){
+
+	.ar-news_block-3_1 br {
+		display: none;
+	}
+
+	.ar-news_block-3_2 {
+		width: 100%;
+	}
+
+	.ar-news_block-3_step-one br {
+		display: block;
+	}
+
+	.ar-news_block-3_reg_btn {
+		width: 100%;
+	}
+
+	.ar-news_block-4_card::before {
+		height: 205px;
+	}
+
+	.ar-news_block-5 {
+		font-size: 20px;
+	}
+
+	.ar-news_block-7 {
+		flex-wrap: wrap;
+	}
+	
+	.ar-news_block-7_side {
+		width: 100%;
+	}
+	
+	.ar-m {
+		display: none;
+	}
+	
+	.ar-s {
+		display: block;
+		width: 100%;
+	}
+	
+	.ar-news_block-7_side_item_btn {
+		position: static;
+	}
+	
+	.ar-news_block-7_side_item_btn div {
+		width: 100%;
+		border-radius: 0px;
+		line-height: 50px;
+		font-size: 22px;
+	}
+	
+	.ar-news_block-7_side_item {
+		margin-bottom: 7%;
+	}
+	
+	.ar-news_block-8_item {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 35px;
+	}
+}
+
+</style>
+
+
+
+<section class="ar-news_container">
+
+	<div class="ar-news_top-img_wrap">
+		<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/ar_head.jpg" alt="Sportmaster" class="ar-img ar-1-m">
+		<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/ar_m_head.jpg" alt="Sportmaster" class="ar-img ar-1-s">
+		<!-- <img src="https://cdn.sptmr.ru/upload/dip_content/2019/news/30093222_2019-09-25/top.jpg" alt="Sportmaster" class="ar-news_top-img"> -->
+	</div>
+	
+	<div class="ar-news_block-1">Компания «Спортмастер» продолжает поддерживать детско-юношеские спортивные соревнования на территории всей страны.</div>
+	
+	<div class="ar-news_block-2">
+		<div class="ar-news_block-2_t">
+			<div class="ar-news_block-2_t_1">
+				<div class="ar-news_block-2_t_1_1">
+					<p>С 27 июля по 1 августа 2020 года в Спортивном Клубе "Будь Здоров" будет проходить турнир Российского теннисного тура по теннису Кубок Спортмастер PRO. В соревнованиях будут участвовать 144 юных спортсмена от 9 до 15 лет в двух возрастных категориях – 9-10 лет и до 15 лет.</p>
+					<p>Главный судья турнира – судья всероссийской категории Анчутин Олег Юрьевич.</p>
+					<p>Для игроков, проигравших в 1-м туре будет проходить дополнительный турнир.</p>
+				</div>
+				<div class="ar-news_block-2_t_2">
+					<div class="ar-news_block-2_t_2_1">Призовой фонд турнира составляет 240 000 рублей.</div>
+					<!-- <div class="ar-news_block-2_t_2_2">По итогам 3 этапов участнику, набравшему большее количество баллов, вручается путевка на теннисный турнир «Roland Garros».</div> -->
+				</div>
+				<!-- <div class="ar-news_block-2_t_1_1">Турнир состоит из 3- этапов:</div> -->
+				<!-- <ul class="ar-news_block-2_t_1_ul">
+					<li>Результаты первого 1-го этапа можно узнать по <a href="https://cdn.sptmr.ru/upload/dip_content/2019/hp/29-week/images/SM_tennis_1.pdf" target="_blank">ссылке</a></li>
+					<li>2 этап - с 27 августа по 02 сентября 2019 года</li>
+					<li>3 этап - с 25 ноября по 28 декабря 2019 года</li>
+				</ul> -->
+			</div>
+			
+		</div>
+		
+		<div class="ar-news_block-2_img">
+			<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/contest.jpg" alt="Sportmaster" class="ar-img">
+		</div>
+	</div>
+	
+	<div class="ar-news_block-3">
+		<div class="ar-news_block-3_1">Каждому участнику турнира Спортмастер будут начислены <span>3000 бонусов</span> сроком на 3 месяца <br> при предъявлении на регистрации телефона, привязанного к клубной карте Спортмастер.</div>
+		<div class="ar-news_block-3_2">Бонусами можно оплатить до 30% стоимости товара и сервисных услуг (в том числе натяжка ракеток и изготовление индивидуальных стелек) (кроме Подарочных карт и товаров категории«Лучшая цена»).</div>
+		<ul class="ar-news_block-3_step">
+			<li class="ar-news_block-3_step-one">
+				<b class="ar-news_block-3_step-number">1</b>
+				<p class="ar-news_block-3_step-text">Зарегистрируйся <br> на соревнование на сайте <a href="https://www.rustennistur.ru/csp/rtt/WPL.Authentication.cls" target="_blank">ртт</a></p>
+			</li>
+			<li class="ar-news_block-3_step-two">
+				<b class="ar-news_block-3_step-number">2</b>
+				<p class="ar-news_block-3_step-text">Укажи при регистрации на турнир в клубе свой телефон, привязанный к клубной карте Спортмастер</p>
+			</li>
+			<li class="ar-news_block-3_step-three">
+				<b class="ar-news_block-3_step-number">3</b>
+				<p class="ar-news_block-3_step-text">Получи <span>3000 бонусов</span> на карту Спортмастер сроком на 3 месяца</p>			
+			</li>
+		</ul>
+		<div class="ar-news_block-3_reg">
+			<a href="https://www.rustennistur.ru/csp/rtt/WPL.Authentication.cls" target="_blank" class="ar-news_block-3_reg_btn">ЗАРЕГИСТРИРОВАТЬСЯ НА ТУРНИР</a>
+			<!-- <div class="ar-news_block-3_reg_t">Через личный кабинет на сайте РТТ</div> -->
+		</div>
+	</div>
+	
+	<div class="ar-news_block-4_card">
+		<div class="ar-news_block-4_card_content">
+			<p class="ar-news_block-4_card_title">Нет клубной карты? <br> Вступай в клуб Спортмастер!</p>
+			<div class="ar-news_block-4_card_register">
+				<a href="/user/session/register.do?skipPopup=true" class="ar-news_block-4_card_register-btn">Зарегистрироваться</a>
+				<a href="/clubpro/" class="ar-news_block-4_card_detailed-btn">Подробнее</a>
+				<div class="ar-news_block-4_card_login">Уже есть карта?
+					<a href="/user/session/login.do" class="ar-news_block-4_card_login-btn">Войти</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="ar-news_block-4">
+		Мы желаем удачи участникам соревнований и больших побед в спорте и жизни!
+	</div>
+	
+	<div class="ar-news_block-5">Приходите поболеть за юных спортсменов,<br> вдохновляйтесь их победами и добивайтесь личных рекордов!</div>
+	
+	<div class="ar-news_block-6">
+		<!-- <div class="ar-news_block-6_logo">
+			<img src="https://cdn.sptmr.ru/upload/dip_content/2019/news/30720098_2019-04-29/pic2.png" alt="Sportmaster" class="ar-img">
+		</div>
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A7791fbc78dc0f371c7767468a6aa3ad632b526fde07ae980bd2d636b0a2ddcdf&amp;source=constructor" width="990" height="246" frameborder="0"></iframe> -->
+		<a href="https://yandex.ru/maps/213/moscow/?from=api-maps&l=map&ll=37.477104%2C55.618265&mode=usermaps&origin=jsapi_2_1_72&um=constructor%3A7791fbc78dc0f371c7767468a6aa3ad632b526fde07ae980bd2d636b0a2ddcdf&z=16" target="_blank">
+			<img src="https://cdn.sptmr.ru/upload/dip_content/2019/news/30720098_2019-04-29/pic2.png" alt="Sportmaster" class="ar-img ar-6-s ar-6-s--1">
+			<img src="https://cdn.sptmr.ru/upload/dip_content/2019/news/30720098_2019-04-29/map.jpg" alt="Sportmaster" class="ar-img ar-6-m">
+			<img src="https://cdn.sptmr.ru/upload/dip_content/2019/news/30720098_2019-04-29/map_s.jpg" alt="Sportmaster" class="ar-img ar-6-s">
+		</a>
+	</div>
+	
+	<div class="ar-news_block-h">ВСЁ, ЧТО НУЖНО ДЛЯ ЗАНЯТИЙ ПО ТЕННИСУ</div>
+	
+	<div class="ar-news_block-7">
+		<div class="ar-news_block-7_side">
+			<a href="/catalog/vse_dlya_tennisa/?f-age=age1_deti&f-grto=grp_of_ware_odezhda&f-delivery=courier" class="ar-news_block-7_side_item">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/Shirt_628.png" alt="Sportmaster" class="ar-img ar-m">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/m_Shirt_628.png" alt="Sportmaster" class="ar-img ar-s">
+				<div class="ar-news_block-7_side_item_btn"><div>Одежда</div></div>
+			</a>
+			<a href="/catalog/vse_dlya_tennisa/?f-age=age1_deti&f-grto=grp_of_ware_obuv" class="ar-news_block-7_side_item">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/ar_sneakers.jpg" alt="Sportmaster" class="ar-img ar-m">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/ar_m_sneakers.jpg" alt="Sportmaster" class="ar-img ar-s">
+				<div class="ar-news_block-7_side_item_btn"><div>Кроссовки</div></div>
+			</a>
+			<a href="/catalog/vse_dlya_tennisa/?f-grto=grp_of_ware_inventar&f-tp=subgroup_detskie" class="ar-news_block-7_side_item">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/racket_629.png" alt="Sportmaster" class="ar-img ar-m">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/m_racket_629.png" alt="Sportmaster" class="ar-img ar-s">
+				<div class="ar-news_block-7_side_item_btn"><div>Ракетки</div></div>
+			</a>
+		</div>
+		<div class="ar-news_block-7_center">
+			<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/people-eg-tovar.jpg" alt="Sportmaster" class="ar-img">
+		</div>
+		<div class="ar-news_block-7_side">
+			<a href="/catalog/vse_dlya_tennisa/?f-grto=grp_of_ware_inventar&f-tp=subgroup_chekhly,subgroup_ryukzaki_bolshie,subgroup_ryukzaki_malye,subgroup_sumki_bolshie,subgroup_sumki_malye,subgroup_sumki_srednie" class="ar-news_block-7_side_item">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/backpack_630.png" alt="Sportmaster" class="ar-img ar-m">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/m_backpack_630.png" alt="Sportmaster" class="ar-img ar-s">
+				<div class="ar-news_block-7_side_item_btn"><div>Сумки, рюкзаки</div></div>
+			</a>
+			<a href="/catalog/vse_dlya_tennisa/?f-grto=grp_of_ware_inventar&f-tp=subgroup_myachi&f-delivery=courier" class="ar-news_block-7_side_item">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/ar_balls.jpg" alt="Sportmaster" class="ar-img ar-m">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/ar_m_balls.jpg" alt="Sportmaster" class="ar-img ar-s">
+				<div class="ar-news_block-7_side_item_btn"><div>Мячи</div></div>
+			</a>
+			<a href="/catalog/vse_dlya_tennisa/?f-grto=grp_of_ware_inventar&f-tp=subgroup_struny&f-delivery=courier" class="ar-news_block-7_side_item">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/strings_3.png" alt="Sportmaster" class="ar-img ar-m">
+				<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/m_strings_3.png" alt="Sportmaster" class="ar-img ar-s">
+				<div class="ar-news_block-7_side_item_btn"><div>Струны</div></div>
+			</a>
+		</div>
+	</div>
+	
+	<div class="ar-news_block-8">
+		<a href="/catalog/brendy/wilson/" class="ar-news_block-8_item">
+			<img src="https://cdn.sptmr.ru/upload/dip_content/2019/news/30720098_2019-04-29/b1.png" alt="Sportmaster" class="ar-img">
+		</a>
+		<a href="/catalog/vse_dlya_tennisa/?f-age=age1_deti&f-brand_id=1070" class="ar-news_block-8_item">
+			<img src="https://cdn.sptmr.ru/upload/dip_content/2019/news/30720098_2019-04-29/b2.png" alt="Sportmaster" class="ar-img">
+		</a>
+		<a href="/catalog/brendy/babolat/" class="ar-news_block-8_item">
+			<img src="https://cdn.sptmr.ru/upload/dip_content/2019/news/30720098_2019-04-29/b3.png" alt="Sportmaster" class="ar-img">
+		</a>
+		<a href="/catalog/brendy/head/" class="ar-news_block-8_item">
+			<img src="https://cdn.sptmr.ru/upload/dip_content/2019/news/30720098_2019-04-29/b4.png" alt="Sportmaster" class="ar-img">
+		</a>
+		<a href="/catalog/vse_dlya_tennisa/?f-age=age1_deti&f-brand_id=6638" class="ar-news_block-8_item">
+			<img src="https://cdn.sptmr.ru/upload/dip_content/2019/news/30720098_2019-04-29/b5.png" alt="Sportmaster" class="ar-img">
+		</a>
+	</div>
+
+	<style>
+		.ar-news_block-9 {
+			width: 100%;
+		}
+
+		.ar-news_block-9 img:nth-child(2) {
+			display: none;
+		}
+
+
+		@media (max-width: 992px) {  }
+		@media (max-width: 768px) {  }
+		@media (max-width: 480px) { 
+
+			.ar-news_block-9 img:nth-child(1) {
+				display: none;
+			}
+
+			.ar-news_block-9 img:nth-child(2) {
+				display: block;
+			}
+		}
+  @media (max-width: 320px) {  }
+	</style>
+	<div class="ar-news_block-9">
+		<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/ar_new_wilson.png" alt="Sportmaster">
+		<img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/944683_2020-05-27/ar_new_m_wilson.png" alt="Sportmaster">
+	</div>
+	
+	
+</section>
+	
+	
+
