@@ -1,0 +1,857 @@
+<link rel="stylesheet" href="/sportmaster.ru/css/proximanova.css">
+
+<style>
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.ttf?v=1.0') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.eot?v=1.0#iefix') format('embedded-opentype'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.woff?v=1.0') format('woff'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.ttf?v=1.0') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.ttf?v=1.0') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.eot?v=1.0#iefix') format('embedded-opentype'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.woff?v=1.0') format('woff'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.ttf?v=1.0') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.ttf?v=1.0') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+</style>
+
+
+<!-- 
+  @media (max-width: 992px) {  }
+  @media (max-width: 768px) {  }
+  @media (max-width: 480px) {  }
+  @media (max-width: 320px) {  }
+ -->
+
+<style>
+
+  .sm-news__date {
+    display: none;
+  }
+
+  .pe-new_container {
+    width: 100%;
+    max-width: 990px;
+    font-family: 'Proxima Nova';
+    color: #212441;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+</style>
+
+
+
+
+
+
+
+
+
+<section class="pe-new_container">
+
+  <style>
+    .pe-new_header_dac {
+      display: flex;
+      flex-wrap: wrap;
+      color: #2d2d2d;
+      font-size: 14px;
+      align-items: center;
+      margin-top: 22px;
+      margin-bottom: 20px;
+
+    }
+
+    .pe-new_header_date {
+      font-weight: 600;
+      position: relative;
+      margin-left: 30px;
+    }
+
+    .pe-new_header_date::before {
+      content: '';
+      background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png);
+      position: absolute;
+      left: -30px;
+      top: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 15px;
+    }
+
+
+
+    .pe-new_header_date::after {
+      content: '';
+      height: 20px;
+      width: 1px;
+      position: absolute;
+      right: -8px;
+      top: -3px;
+      background: #000000;
+    }
+
+    .pe-new_header_city {
+      margin-left: 16px;
+    }
+
+
+    @media (max-width: 992px){ 
+
+      .pe-new_header_dac {
+        flex-direction: column;
+        align-items: inherit;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .pe-new_header_date {
+        margin-bottom: 7px;
+      }
+
+
+      .pe-new_header_date::after {
+        content: none;
+      }
+
+      .pe-new_header_city {
+        margin-left: 0;
+      }
+
+
+    }
+
+
+    @media (max-width: 480px){ 
+      .pe-new_header_dac {
+        font-size: 10px;
+     }
+
+     .pe-new_header_date {
+        margin-left: 24px;
+     }
+
+     .pe-new_header_date::before {
+        left: -24px;
+        width: 12px;
+        height: 12px;
+     }
+
+    }
+
+
+    
+  </style>
+
+  <div class="pe-new_header_dac">
+    <div class="pe-new_header_date">14-15 декабря 2019</div>
+    <div class="pe-new_header_city">г. Москва, г. Мытищи</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<!-- first block -->
+<!-- first block -->
+<!-- first block -->
+
+
+
+
+<style>
+    
+    .pe-new_header_invitation img:nth-child(2) {
+      display: none;
+    }
+
+  .pe-new_header_img {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pe-new_header_text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+
+    margin-top: 25px;
+  }
+
+  .pe-new_header_text br {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 992px) {  }
+  @media (max-width: 768px) {  }
+  @media (max-width: 480px) {
+
+    .pe-new_header_invitation img:first-child {
+      display: none;
+    }
+    
+    .pe-new_header_invitation img:nth-child(2) {
+      display: block;
+    }
+
+    .pe-new_header_text {
+      font-size: 13px;
+      line-height: 15px;
+      margin-top: 15px;
+    }
+  }
+  @media (max-width: 320px) {  }
+
+</style>
+
+
+
+  <div class="pe-new_header_invitation">
+    <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/1020208_2020-06-25/pet_new_head.jpg" class="pe-new_header_img" alt="юные горнолыжники и сноубордисты"></img>
+    <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/1020208_2020-06-25/pet_new_m_head.jpg" class="pe-new_header_img" alt="юные горнолыжники и сноубордисты"></img>
+    <div class="pe-new_header_text">
+      14-15 декабря состоится крупный турнир по специальной физической подготовке Выход в силу. 
+      <br>
+      Участники показавшие лучшие результаты получат подарочный сертификат на 2000 рублей. 
+      <br>
+      Все участники турнира получат 1500 бонусов на клубную карту.
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+<!-- second block -->
+<!-- second block -->
+<!-- second block -->
+
+
+
+
+<style>
+  .pe-new_schedule {
+    margin-top: 60px;
+  }
+
+  .pe-new_schedule_title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2d2d2d;
+    margin-bottom: 40px;
+  }
+
+  .pe-new_schedule_date {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .pe-new_schedule_date div:first-child {
+    margin-left: 0;
+  }
+
+  .pe-new_schedule_date div:last-child {
+    margin-right: 0;
+  }
+
+  .pe-new_schedule_date-block {
+    display: flex;
+    flex-direction: column;
+    width: 47.3%;
+    border: 1px solid #dcdcdc;
+    text-align: center;
+    border-radius: 5px;
+    align-items: center;
+  }
+
+  .pe-new_schedule_date-block_time {
+    font-size: 32px;
+    font-weight: 700;
+    color: #025baa;
+    height: 39px;
+    background: #f5faff;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 15px 0;
+    border-radius: 5px 5px 0px 0px;
+    width: 100%;
+  }
+
+  .pe-new_schedule_date-block_description {
+    font-size: 18px;
+    color: #2d2d2d;
+    font-weight: 500;
+    line-height: 1.14;
+    padding: 18px 12px;
+    max-width: 380px;
+  }
+
+  @media (max-width: 992px) {  }
+  @media (max-width: 768px) {
+
+      .pe-new_schedule_date-block {
+          margin-bottom: 30px;
+        }
+
+      .pe-new_schedule_date-block:nth-child(4) {
+          margin-bottom: 0px;
+      }
+    }
+
+
+  @media (max-width: 480px) {
+
+    .pe-new_schedule {
+      margin-top: 40px;
+    }
+    .pe-new_schedule_title {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .pe-new_schedule_date-block {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .pe-new_schedule_date-block:nth-child(3) {
+        margin-bottom: 0px;
+    }
+
+    .pe-new_schedule_date-block_description {
+      font-size: 16px;
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 320px) {
+    .pe-new_schedule_date {
+      justify-content: center;
+    }
+
+    .pe-new_schedule_date-block {
+        margin-bottom: 15px;
+        align-items: center;
+    }
+
+    .pe-new_schedule_date-block:nth-child(3) {
+        margin-bottom: 15px;
+    }
+
+    .pe-new_schedule_date-block_description {
+    }
+  }
+
+</style>
+
+<div class="pe-new_schedule">
+  <div class="pe-new_schedule_title">
+    Расписание:
+  </div>
+  <div class="pe-new_schedule_date">
+
+
+    <div class="pe-new_schedule_date-block">
+      <div class="pe-new_schedule_date-block_time">
+        14 декабря
+      </div>
+      <div class="pe-new_schedule_date-block_description">
+        Центр Лужники, Строгино, Куркино, Бутово,
+        Чертаново, Марьино.
+      </div>
+    </div>
+
+    <div class="pe-new_schedule_date-block">
+      <div class="pe-new_schedule_date-block_time">
+        15 декабря
+      </div>
+      <div class="pe-new_schedule_date-block_description">
+        Локомотив, Динамо, Медведково+ Мытищи
+        (в Центре Мытищи), Мичуринский, Сетунь,
+        Троицк, Люберцы.
+      </div>
+    </div>
+
+<!--     <div class="pe-new_schedule_date-block">
+      <div class="pe-new_schedule_date-block_time">
+        12:15
+      </div>
+      <div class="pe-new_schedule_date-block_description">
+        Старт возрастной
+        категории 7-13 лет
+      </div>
+    </div>
+
+    <div class="pe-new_schedule_date-block">
+      <div class="pe-new_schedule_date-block_time">
+        17:00
+      </div>
+      <div class="pe-new_schedule_date-block_description">
+        Награждение
+        победителей и участников
+      </div> -->
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+<!-- third block -->
+<!-- third block -->
+<!-- third block -->
+
+
+
+
+<style>
+
+  .pe-new_age-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .pe-new_age-group_title {
+    font-size: 32px;
+    color: #2d2d2d;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .pe-new_age-group_subject {
+    display: flex;
+    flex-direction: column;
+    color: #2d2d2d;
+    margin-bottom: 44px;
+    font-size: 24px;
+  }
+
+  .pe-new_age-group_subject_ski {
+    margin-left: 38px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .pe-new_age-group_subject_ski::before {
+    content: '';
+    width: 11px;
+    height: 3px;
+    position: absolute;
+    left: -37px;
+    top: 10px;
+    background: #015ba7;
+    transform: rotate(45deg);
+    border-radius: 10px;
+  }
+
+  .pe-new_age-group_subject_ski::after {
+    content: '';
+    width: 11px;
+    height: 3px;
+    position: absolute;
+    left: -37px;
+    top: 16px;
+    background: #015ba7;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+  }
+
+  .pe-new_age-group_subject_snowboard {
+    margin-left: 38px;
+    position: relative;
+  }
+
+  .pe-new_age-group_subject_snowboard::before {
+    content: '';
+    width: 11px;
+    height: 3px;
+    position: absolute;
+    left: -37px;
+    top: 10px;
+    background: #015ba7;
+    transform: rotate(45deg);
+    border-radius: 10px;
+  }
+
+  .pe-new_age-group_subject_snowboard::after {
+    content: '';
+    width: 11px;
+    height: 3px;
+    position: absolute;
+    left: -37px;
+    top: 16px;
+    background: #015ba7;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+  }
+
+  .pe-new_age-group_link {
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+  }
+
+  .pe-new_age-group_link-block {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .pe-new_age-group_link-block a {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #015ba7;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 10px 0;
+    border-radius: 5px;
+    width: 39.7%;
+    text-align: center;
+  }
+
+  .pe-new_age-group_link-block a:hover {
+    background: #015ba7c2;
+  }
+
+
+  @media (max-width: 992px) {  }
+  @media (max-width: 768px) {  }
+  @media (max-width: 480px) {
+
+    .pe-new_age-group {
+      margin-top: 40px;
+    }
+
+    .pe-new_age-group_title {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .pe-new_age-group_subject {
+      font-size: 16px;
+    }
+
+    .pe-new_age-group_subject_ski,
+    .pe-new_age-group_subject_snowboard {
+      margin-left: 21px;
+    }
+
+    .pe-new_age-group_subject_ski::before {
+      content: '';
+      width: 8px;
+      height: 2.3px;
+      position: absolute;
+      left: -21px;
+      top: 7px;
+      background: #015ba7;
+      transform: rotate(45deg);
+      border-radius: 5px;
+    }
+
+    .pe-new_age-group_subject_ski::after {
+      content: '';
+      width: 8px;
+      height: 2.3px;
+      position: absolute;
+      left: -21px;
+      top: 11px;
+      background: #015ba7;
+      transform: rotate(-45deg);
+      border-radius: 10px;
+    }
+
+    .pe-new_age-group_subject_snowboard::before {
+      content: '';
+      width: 8px;
+      height: 2.3px;
+      position: absolute;
+      left: -21px;
+      top: 7px;
+      background: #015ba7;
+      transform: rotate(45deg);
+      border-radius: 5px;
+    }
+
+    .pe-new_age-group_subject_snowboard::after {
+      content: '';
+      width: 8px;
+      height: 2.3px;
+      position: absolute;
+      left: -21px;
+      top: 11px;
+      background: #015ba7;
+      transform: rotate(-45deg);
+      border-radius: 10px;
+    }
+
+    .pe-new_age-group_link-block {
+      font-size: 14px;
+      width: 92%;
+    }
+
+    .pe-new_age-group_link-block a {
+      width: 100%;
+    }
+  }
+  @media (max-width: 320px) {
+
+    .pe-new_age-group_subject {
+      width: 92%;
+    }
+  }
+
+</style>
+
+<div class="pe-new_age-group">
+  <div class="pe-new_age-group_title">
+    Возрастные группы:
+  </div>
+
+  <div class="pe-new_age-group_subject">
+    <div class="pe-new_age-group_subject_ski">
+      3-5 лет; 5-7 лет; 7-11 лет; 11-18 лет; 18+ лет
+    </div>
+    <!-- <div class="pe-new_age-group_subject_snowboard">
+      <b>Сноуборд:</b> 8-10 лет; 11-13 лет
+    </div> -->
+  </div>
+
+  <div class="pe-new_age-group_link">
+    <div class="pe-new_age-group_link-block">
+      <a href="https://www.europegym.ru/news/vykhod-v-silu-dekabr-2019.html" target="_blank">Подробнее</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+  
+<!-- fourth block -->
+<!-- fourth block -->
+<!-- fourth block -->
+
+
+
+
+<style>
+  .pe-new_results {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .pe-new_results_title {
+    font-size: 32px;
+    color: #2d2d2d;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .pe-new_results_img {
+    margin-bottom: 40px;
+  }
+
+  .pe-new_results_img img {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pe-new_results_img img:last-child {
+    display: none;
+  }
+
+  .pe-new_results_link {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+  }
+
+  .pe-new_results_link-block {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .pe-new_results_link-block a {
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #015ba7;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 10px 0;
+    border-radius: 5px;
+    text-align: center;
+    width: 39.7%;
+  }
+
+  .pe-new_results_link-block a:hover {
+    background: #015ba7c2;
+  }
+
+
+  @media (max-width: 992px) {  }
+  @media (max-width: 768px) { 
+
+    .pe-new_results_link-block {
+      width: 90%;
+    }
+
+    .pe-new_results_link-block a {
+      width: 48%;
+    }
+
+  }
+  @media (max-width: 480px) {
+
+    .pe-new_results_title {
+      font-size: 20px;
+      display: none;
+    }
+
+    .pe-new_results_img {
+      margin-bottom: 35px;
+    }
+
+    .pe-new_results_img img:first-child {
+      display: none;
+    }
+
+    .pe-new_results_img img:last-child {
+      display: block;
+    }
+
+    .pe-new_results_link-block {
+      font-size: 14px;
+      width: 92%;
+      flex-direction: column;
+    }
+
+    .pe-new_results_link-block a:first-child {
+      margin-bottom: 17px;
+    }
+
+    .pe-new_results_link-block a {
+      width: 100%;
+    }
+
+  }
+  @media (max-width: 320px) {  }
+
+</style>
+
+<div class="pe-new_results">
+  <div class="pe-new_results_title">
+    Итоги соревнований:
+  </div>
+  <div class="pe-new_results_img">
+    <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/1020208_2020-06-25/pet_new_footer.jpg" alt="награждение юных участников">
+    <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/1020208_2020-06-25/pet_new_m_footer.jpg" alt="награждение юных участников">
+  </div>
+
+  <div class="pe-new_results_link">
+    <div class="pe-new_results_link-block">
+      <a href="https://www.outforce.europegym.ru/rezultaty_3-5_let.html" target="_blank">Результаты</a>
+      <a href="https://vk.com/album-48593_275822877">Фото с мероприятия</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+  
+<!-- height block -->
+<!-- height block -->
+<!-- height block -->
+
+
+
+
+<style>
+  .pe-new_height {
+    height: 30px;
+  }
+
+</style>
+
+<div class="pe-new_height"></div>
+
+
+
+
+</section>

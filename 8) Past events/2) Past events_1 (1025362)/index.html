@@ -1,0 +1,904 @@
+<link rel="stylesheet" href="/sportmaster.ru/css/proximanova.css">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1, maximum-scale=1.0, minimal-ui">
+<style>
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_light.ttf?v=1.0') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.eot?v=1.0#iefix') format('embedded-opentype'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.woff?v=1.0') format('woff'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_rg.ttf?v=1.0') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/2020/news/529_2020-03-03/ProximaNova-Semibold.ttf?v=1.0') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.eot?v=1.0#iefix') format('embedded-opentype'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.woff?v=1.0') format('woff'), url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova_bold.ttf?v=1.0') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.eot?v=1.0');
+  src: url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.eot?v=1.0#iefix') format('embedded-opentype'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.woff?v=1.0') format('woff'),
+  url('https://cdn.sptmr.ru/upload/dip_content/font/fonts/Proxima_Nova/ProximaNova-Extrabld.ttf?v=1.0') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+</style>
+
+
+<!-- 
+  @media (max-width: 992px) {  }
+  @media (max-width: 768px) {  }
+  @media (max-width: 480px) {  }
+  @media (max-width: 320px) {  }
+ -->
+
+<style>
+
+  .sm-news__date {
+    display: none;
+  }
+
+  .pes-new_container {
+    width: 100%;
+    max-width: 990px;
+    font-family: 'Proxima Nova';
+    color: #212441;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+</style>
+
+<section class="pes-new_container">
+
+  <style>
+    .pes-new_header_dac {
+      display: flex;
+      flex-wrap: wrap;
+      color: #000000;
+      font-size: 14px;
+      align-items: center;
+      margin-top: 22px;
+      margin-bottom: 20px;
+
+    }
+
+    .pes-new_header_date {
+      font-weight: 600;
+      position: relative;
+      margin-left: 30px;
+    }
+
+    .pes-new_header_date::before {
+      content: '';
+      background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/470333_2020-02-06/calendar.png);
+      position: absolute;
+      left: -30px;
+      top: 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 15px;
+    }
+
+
+
+    .pes-new_header_date::after {
+      content: '';
+      height: 20px;
+      width: 1px;
+      position: absolute;
+      right: -8px;
+      top: -3px;
+      background: #000000;
+    }
+
+    .pes-new_header_city {
+      margin-left: 16px;
+    }
+
+
+    @media (max-width: 992px){ 
+
+      .pes-new_header_dac {
+        flex-direction: column;
+        align-items: inherit;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .pes-new_header_date {
+        margin-bottom: 7px;
+      }
+
+
+      .pes-new_header_date::after {
+        content: none;
+      }
+
+      .pes-new_header_city {
+        margin-left: 0;
+      }
+
+
+    }
+
+
+    @media (max-width: 480px){ 
+      .pes-new_header_dac {
+        font-size: 10px;
+     }
+
+     .pes-new_header_date {
+        margin-left: 24px;
+     }
+
+     .pes-new_header_date::before {
+        left: -24px;
+        width: 12px;
+        height: 12px;
+     }
+
+    }
+
+
+    
+  </style>
+
+  <div class="pes-new_header_dac">
+    <div class="pes-new_header_date">2 Февраля 2020</div>
+    <div class="pes-new_header_city">г. Новосибирск, Лыжная база "Буревестник"</div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+<!-- first block -->
+<!-- first block -->
+<!-- first block -->
+
+
+
+
+<style>
+    
+  .pes-new_header_invitation img:nth-child(2) {
+    display: none;
+  }
+
+  .pes-new_header_img {
+    width: 100%;
+  }
+
+  .pes-new_header_text {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+
+    margin-top: 25px;
+  }
+
+  .pes-new_header_text br:first-child {
+    margin-bottom: 0;
+  }
+
+  .pes-new_header_text br {
+    margin-bottom: 20px;
+  }
+
+  @media (max-width: 992px) {  }
+  @media (max-width: 768px) {  }
+  @media (max-width: 480px) {
+
+    .pes-new_header_invitation img:first-child {
+      display: none;
+    }
+    
+    .pes-new_header_invitation img:nth-child(2) {
+      display: block;
+    }
+
+    .pes-new_header_text {
+      font-size: 13px;
+      line-height: 15px;
+      margin-top: 15px;
+    }
+  }
+  @media (max-width: 320px) {  }
+
+</style>
+
+
+
+  <div class="pes-new_header_invitation">
+    <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/1020208_2020-06-25/pe_1_new_head.jpg" class="pes-new_header_img"></img>
+    <img src="https://cdn.sptmr.ru/upload/dip_content/2020/news/1020208_2020-06-25/pe_1_new_m_head.jpg" class="pes-new_header_img"></img>
+    <div class="pes-new_header_text">
+      2 февраля в г. Новосибирске состоятся соревнования по лыжным гонкам на кубок Спортмастера.
+      <br>
+      1,2,3 места награждаются грамотами, медалями и подарочными сертификатами Спортмастер. 
+      <br>
+      Все участники соревнований получат 1000 бонусов на клубную карту.
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+  
+<!-- second block -->
+<!-- second block -->
+<!-- second block -->
+
+
+
+
+<style>
+  .pes-new_admission {
+    width: 100%;
+    background: #e3f2ff;
+    padding: 60px 0;
+    margin-top: 60px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .pes-new_admission_text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    width: 72%;
+    text-align: center;
+  }
+
+  @media (max-width: 992px) {  }
+  @media (max-width: 768px) {  }
+  @media (max-width: 480px) {
+    .pes-new_admission {
+      margin-top: 40px;
+    }
+
+    .pes-new_admission_text {
+      font-size: 15px;
+      min-width: 229px;
+      text-align: center;
+    }
+  }
+  @media (max-width: 320px) {  }
+
+</style>
+
+
+<div class="pes-new_admission">
+  
+  <div class="pes-new_admission_text">
+    К соревнованиям допускаются спортсмены спортивных школ и районов области.
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+  
+<!-- third block -->
+<!-- third block -->
+<!-- third block -->
+
+
+
+
+<style>
+  .pes-new_priz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .pes-new_priz_content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .pes-new_priz_content::before {
+    content: '';
+    width: 496px;
+    height: 280px;
+    background-image: url(https://cdn.sptmr.ru/upload/dip_content/2020/news/1020208_2020-06-25/pe_1_new_m_cards.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0;
+    width: 50%;
+  }
+
+  .pes-new_priz_title {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgba(45, 45, 45, 1);
+    margin-top: 60px;
+    width: 50%;
+  }
+
+  .pes-new_priz_description {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: 25px;
+    margin-bottom: 90px;
+    max-width: 390px;
+    width: 48%;
+  }
+
+  @media (max-width: 992px) {  }
+  @media (max-width: 768px) {
+
+    .pes-new_priz_content {
+      align-items: center;
+    }
+
+    .pes-new_priz_content::before {
+      bottom: 0;
+      max-width: 310px;
+      width: 100%;
+      height: 176px;
+      right: inherit;
+    }
+
+    .pes-new_priz_text {
+      width: 100%;
+    }
+
+    .pes-new_priz_title {
+      width: 100%;
+    }
+
+    .pes-new_priz_description {
+      width: 100%;
+      max-width: 100%;
+      margin-bottom: 200px;
+      margin-top: 15px;
+    }
+
+  }
+  @media (max-width: 480px) {
+
+    .pes-new_priz_title {
+      margin-top: 40px;
+    }
+
+    .pes-new_priz_title {
+      font-size: 20px;
+      margin-top: 0;
+    }
+
+    .pes-new_priz_description {
+      font-size: 13px;
+      max-width: 93%;
+    }
+
+
+  @media (max-width: 320px) {  }
+
+</style>
+
+<div class="pes-new_priz">
+  <div class="pes-new_priz_content">
+    <div class="pes-new_priz_text">
+      <div class="pes-new_priz_title">
+        Призовой фонд - 72000 рублей
+      </div>
+      <div class="pes-new_priz_description">
+        Участники занявшие призовые места (1,2,3) 
+        награждаются грамотами, медалями, кубками
+        и подарочными сертификатами Спортмастер.
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+  
+<!-- third block -->
+<!-- third block -->
+<!-- third block -->
+
+
+
+
+<style>
+
+  .pe-new_age-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  .pe-new_age-group_title {
+    font-size: 32px;
+    color: #2d2d2d;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+
+  .pe-new_age-group_subject {
+    display: flex;
+    flex-direction: column;
+    color: #2d2d2d;
+    margin-bottom: 44px;
+    font-size: 24px;
+  }
+
+  .pe-new_age-group_subject_ski {
+    margin-left: 38px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .pe-new_age-group_subject_ski::before {
+    content: '';
+    width: 11px;
+    height: 3px;
+    position: absolute;
+    left: -37px;
+    top: 10px;
+    background: #015ba7;
+    transform: rotate(45deg);
+    border-radius: 10px;
+  }
+
+  .pe-new_age-group_subject_ski::after {
+    content: '';
+    width: 11px;
+    height: 3px;
+    position: absolute;
+    left: -37px;
+    top: 16px;
+    background: #015ba7;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+  }
+
+  .pe-new_age-group_subject_snowboard {
+    margin-left: 38px;
+    position: relative;
+  }
+
+  .pe-new_age-group_subject_snowboard::before {
+    content: '';
+    width: 11px;
+    height: 3px;
+    position: absolute;
+    left: -37px;
+    top: 10px;
+    background: #015ba7;
+    transform: rotate(45deg);
+    border-radius: 10px;
+  }
+
+  .pe-new_age-group_subject_snowboard::after {
+    content: '';
+    width: 11px;
+    height: 3px;
+    position: absolute;
+    left: -37px;
+    top: 16px;
+    background: #015ba7;
+    transform: rotate(-45deg);
+    border-radius: 10px;
+  }
+
+  .pes-new_link_block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .pes-new_link {
+    padding: 10px 0;
+    background: rgba(1, 91, 167, 1);
+    text-align: center;
+    width: 31.7%;
+    min-width: 280px;
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+
+  .pes-new_link:hover {
+    background: rgba(0, 77, 142, 1);
+    color: #ffffff;
+    /*border: 1px solid #015ba75c;*/
+    box-shadow: 0px 0px 14px 1px rgba(0, 77, 142, 1);
+  }
+
+
+  @media (max-width: 992px) {  }
+  @media (max-width: 768px) {  }
+  @media (max-width: 480px) {
+
+    .pe-new_age-group {
+      margin-top: 40px;
+    }
+
+    .pe-new_age-group_title {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .pe-new_age-group_subject {
+      font-size: 16px;
+    }
+
+    .pe-new_age-group_subject_ski,
+    .pe-new_age-group_subject_snowboard {
+      margin-left: 21px;
+    }
+
+    .pe-new_age-group_subject_ski::before {
+      content: '';
+      width: 8px;
+      height: 2.3px;
+      position: absolute;
+      left: -21px;
+      top: 7px;
+      background: #015ba7;
+      transform: rotate(45deg);
+      border-radius: 5px;
+    }
+
+    .pe-new_age-group_subject_ski::after {
+      content: '';
+      width: 8px;
+      height: 2.3px;
+      position: absolute;
+      left: -21px;
+      top: 11px;
+      background: #015ba7;
+      transform: rotate(-45deg);
+      border-radius: 10px;
+    }
+
+    .pe-new_age-group_subject_snowboard::before {
+      content: '';
+      width: 8px;
+      height: 2.3px;
+      position: absolute;
+      left: -21px;
+      top: 7px;
+      background: #015ba7;
+      transform: rotate(45deg);
+      border-radius: 5px;
+    }
+
+    .pe-new_age-group_subject_snowboard::after {
+      content: '';
+      width: 8px;
+      height: 2.3px;
+      position: absolute;
+      left: -21px;
+      top: 11px;
+      background: #015ba7;
+      transform: rotate(-45deg);
+      border-radius: 10px;
+    }
+
+    .pes-new_link {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 320px) {
+
+    .pe-new_age-group_subject {
+      width: 92%;
+    }
+  }
+
+</style>
+
+<div class="pe-new_age-group">
+  <div class="pe-new_age-group_title">
+    Программа соревнований:
+  </div>
+
+  <div class="pe-new_age-group_subject">
+    <div class="pe-new_age-group_subject_ski">
+      <b>Дата проведения:</b> 02 февраля 2020
+    </div>
+    <div class="pe-new_age-group_subject_ski">
+      <b>Стиль:</b> Свободный
+    </div>
+    <div class="pe-new_age-group_subject_snowboard">
+      <b>Начало жеребьевки:</b> 10:00
+    </div>
+  </div>
+  <div class="pes-new_link_block">
+      <a href="https://flgnso.ru/" target="_blank" class="pes-new_link">Подробнее</a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+<!-- third block -->
+<!-- third block -->
+<!-- third block -->
+
+
+
+
+<style>
+  .pes-new_report {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .pes-new_report_title {
+    color: rgba(45, 45, 45, 1);
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .pes-new_report_table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 25px;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+  }
+
+  .pes-new_report_table tr:nth-child(1) td:first-child,
+  .pes-new_report_table tr:nth-child(3) td:first-child {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .pes-new_report_table tr:nth-child(1) td:last-child,
+  .pes-new_report_table tr:nth-child(3) td:last-child {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .pes-new_report_table tr:nth-child(1) td,
+  .pes-new_report_table tr:nth-child(3) td {
+    background-color: rgba(238, 238, 238, 1);
+  }
+
+  .pes-new_report_table td {
+    padding: 15px 0;
+    border-right: 1px solid rgba(188, 188, 188, 0.47);
+    align-items: center;
+  }
+
+  .pes-new_report_table td:last-child {
+    border-right: none;
+  }
+
+  .pes-new_report_table_sl td:nth-child(2),
+  .pes-new_report_table_tl td:nth-child(2) {
+    padding: 0;
+  }
+
+  .pes-new_report_table_sl td:nth-child(2) a:nth-child(1),
+  .pes-new_report_table_tl td:nth-child(2) a:nth-child(1) {
+    padding: 15px 0;
+    border-right: 1px solid rgba(188, 188, 188, 0.47);
+  }
+
+  .pes-new_report_table_sl td:nth-child(2),
+  .pes-new_report_table_tl td:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pes-new_report_table_sl td:nth-child(2) a,
+  .pes-new_report_table_tl td:nth-child(2) a {
+    padding: 15px 0;
+    width: 50%;
+    text-align: center;
+  }
+
+  .pes-new_report_table_link {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .pes-new_report_table_link:hover {
+    background: rgba(1, 91, 167, 0.63);
+    color: #fff;
+  }
+/*
+  @media (max-width: 992px) {  }*/
+  @media (max-width: 768px) {
+
+    .pes-new_report_table_overflow {
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .pes-new_report_table {
+      width: 900px;
+    }  
+  }
+  @media (max-width: 480px) {
+    .pes-new_report_title {
+      font-size: 20px;
+    }
+
+    .pes-new_report_table {
+      font-size: 13px;
+      width: 640px;
+    }
+
+    .pes-new_report_table_link {
+      font-size: 13px;
+    }
+  }
+/*  @media (max-width: 320px) {  }*/
+
+</style>
+
+
+<div class="pes-new_report">
+
+  <div class="pes-new_report_title">
+    Итоговые протоколы:
+  </div>
+  
+
+    <div class="pes-new_report_table_overflow">
+  <table class="pes-new_report_table">
+      <tr class="pes-new_report_table_fl">
+        <td>Пол</td>
+        <td>Возрастные категории</td>
+        <td>Дистанция</td>
+        <td>Стиль</td>
+      </tr>
+      <tr class="pes-new_report_table_sl">
+        <td>Девушки</td>
+        <td>
+          <a href="https://flgnso.ru/images/Season_2020/20200202/20200202_L04-05_3km_RS.pdf" target="_blank" class="pes-new_report_table_link">2004-2005 г.р</a>
+        
+          <a href="https://flgnso.ru/images/Season_2020/20200202/20200202_L06-07_3km_RS.pdf" target="_blank" class="pes-new_report_table_link">2006-2007 г.р</a>
+        </td> 
+        <td>3 км</td> 
+        <td>Свободный </td> 
+      </tr>
+      <tr class="pes-new_report_table_tl">
+        <td>Юноши</td>
+        <td>
+          <a href="https://flgnso.ru/images/Season_2020/20200202/20200202_M04-05_5km_RS.pdf" target="_blank" class="pes-new_report_table_link">2004-2005 г.р</a>
+
+          <a href="https://flgnso.ru/images/Season_2020/20200202/20200202_M06-07_5km_RS.pdf" target="_blank" class="pes-new_report_table_link">2006-2007 г.р</a>
+        </td> 
+        <td>5 км</td> 
+        <td>Свободный </td> 
+      </tr>
+
+
+  </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+  
+<!-- height block -->
+<!-- height block -->
+<!-- height block -->
+
+
+
+
+<style>
+  .pes-new_height {
+    height: 40px;
+  }
+
+</style>
+
+<div class="pes-new_height"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</section>
